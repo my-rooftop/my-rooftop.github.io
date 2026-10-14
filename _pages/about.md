@@ -30,14 +30,12 @@ You can find my publications on [Google Scholar](https://scholar.google.com/cita
 
 # 📝 Publications 
 
-<sup>†</sup> corresponding author
-
 - **RB-LDC: Redundancy-Balanced Latent Coding for Robust Diffusion**  
-  Hyunseok Jeong, **Jaeho Jeon**<sup>†</sup>, Young-Sik Kim  
+  Hyunseok Jeong, **Jaeho Jeon**, Young-Sik Kim  
   *The Fortieth Annual Conference on Neural Information Processing Systems (**NeurIPS 2026**)*
 
 - **Codeword Masking Can Be Harmful Under Replay Attacks on HQC**  
-  **Jaeho Jeon**<sup>†</sup>, Yongseong Park, Jaeyeon Lee, Suseong Lee, Donghyen Kim, Young-Sik Kim  
+  **Jaeho Jeon**, Yongseong Park, Jaeyeon Lee, Suseong Lee, Donghyen Kim, Young-Sik Kim  
   *International Conference on the Theory and Application of Cryptology and Information Security (**ASIACRYPT 2026**)*  
   [[ePrint 2026/071]](https://eprint.iacr.org/2026/071)
 
