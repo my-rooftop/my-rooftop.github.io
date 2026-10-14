@@ -26,8 +26,8 @@ You can find my publications on [Google Scholar](https://scholar.google.com/cita
 
 # 🔥 News
 - *2026.09*: &nbsp;🎉🎉 Our paper "RB-LDC: Redundancy-Balanced Latent Coding for Robust Diffusion" is accepted to **NeurIPS 2026**.
-- *2026*: &nbsp;🏆 *PostQuantum Shield* passed the DGIST preliminary round of the **GRAVITY 2026** Startup Competition ($10,000 prize). [[slides]](files/PostQuantumShield_GRAVITY2026.pdf)
 - *2026.08*: &nbsp;🎉🎉 Our paper "Codeword Masking Can Be Harmful Under Replay Attacks on HQC" is accepted to **ASIACRYPT 2026**.
+- *2026.06*: &nbsp;🏆 *PostQuantum Shield* passed the DGIST preliminary round of the **GRAVITY 2026** Startup Competition ($10,000 prize). [[slides]](files/PostQuantumShield_GRAVITY2026.pdf)
 
 # 📝 Publications 
 
@@ -41,7 +41,7 @@ You can find my publications on [Google Scholar](https://scholar.google.com/cita
   [[ePrint 2026/071]](https://eprint.iacr.org/2026/071)
 
 # 🎖 Honors and Awards
-- *2026*, **GRAVITY 2026 Startup Competition**, passed the DGIST preliminary round with *PostQuantum Shield*, a hardware-hacking (side-channel) certification service for cryptographic products. Prize: $10,000. \| [\[slides\]](files/PostQuantumShield_GRAVITY2026.pdf)
+- *2026.06*, **GRAVITY 2026 Startup Competition**, passed the DGIST preliminary round with *PostQuantum Shield*, a hardware-hacking (side-channel) certification service for cryptographic products. Prize: $10,000. \| [\[slides\]](files/PostQuantumShield_GRAVITY2026.pdf)
 
 # 📖 Educations
 - *2026.02 - present*, Ph.D. student, Department of Electrical Engineering and Computer Science, [DGIST](https://www.dgist.ac.kr/), Daegu, South Korea.
