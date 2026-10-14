@@ -20,3 +20,8 @@ gem "base64"
 gem "bigdecimal"
 gem "logger"
 gem "webrick"
+
+# Pin Dart Sass before the "mixed-decls" behaviour change so local CSS matches
+# the Ruby Sass output that GitHub Pages produces (declarations after nested
+# rules are hoisted instead of emitted in source order).
+gem "sass-embedded", "~> 1.77.0"

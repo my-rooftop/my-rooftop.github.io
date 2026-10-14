@@ -157,22 +157,22 @@ GEM
     rexml (3.4.4)
     rouge (4.7.0)
     safe_yaml (1.0.5)
-    sass-embedded (1.105.1-aarch64-linux-gnu)
-      google-protobuf (~> 4.31)
-    sass-embedded (1.105.1-aarch64-linux-musl)
-      google-protobuf (~> 4.31)
-    sass-embedded (1.105.1-arm-linux-gnueabihf)
-      google-protobuf (~> 4.31)
-    sass-embedded (1.105.1-arm-linux-musleabihf)
-      google-protobuf (~> 4.31)
-    sass-embedded (1.105.1-arm64-darwin)
-      google-protobuf (~> 4.31)
-    sass-embedded (1.105.1-x86_64-darwin)
-      google-protobuf (~> 4.31)
-    sass-embedded (1.105.1-x86_64-linux-gnu)
-      google-protobuf (~> 4.31)
-    sass-embedded (1.105.1-x86_64-linux-musl)
-      google-protobuf (~> 4.31)
+    sass-embedded (1.77.8-aarch64-linux-gnu)
+      google-protobuf (~> 4.26)
+    sass-embedded (1.77.8-aarch64-linux-musl)
+      google-protobuf (~> 4.26)
+    sass-embedded (1.77.8-arm-linux-gnueabihf)
+      google-protobuf (~> 4.26)
+    sass-embedded (1.77.8-arm-linux-musleabihf)
+      google-protobuf (~> 4.26)
+    sass-embedded (1.77.8-arm64-darwin)
+      google-protobuf (~> 4.26)
+    sass-embedded (1.77.8-x86_64-darwin)
+      google-protobuf (~> 4.26)
+    sass-embedded (1.77.8-x86_64-linux-gnu)
+      google-protobuf (~> 4.26)
+    sass-embedded (1.77.8-x86_64-linux-musl)
+      google-protobuf (~> 4.26)
     sawyer (0.9.3)
       addressable (>= 2.3.5)
       faraday (>= 0.17.3, < 3)
@@ -210,6 +210,7 @@ DEPENDENCIES
   jekyll-sitemap
   jemoji
   logger
+  sass-embedded (~> 1.77.0)
   webrick
 
 CHECKSUMS
@@ -284,14 +285,14 @@ CHECKSUMS
   rexml (3.4.4) sha256=19e0a2c3425dfbf2d4fc1189747bdb2f849b6c5e74180401b15734bc97b5d142
   rouge (4.7.0) sha256=dba5896715c0325c362e895460a6d350803dbf6427454f49a47500f3193ea739
   safe_yaml (1.0.5) sha256=a6ac2d64b7eb027bdeeca1851fe7e7af0d668e133e8a88066a0c6f7087d9f848
-  sass-embedded (1.105.1-aarch64-linux-gnu) sha256=e86b54a8dc1ce0d348cf3e963b5f5650995666db9fdb534c4d6febaeaddc5c6b
-  sass-embedded (1.105.1-aarch64-linux-musl) sha256=8f36f6de801adbaff3280f6758df790a4f97340ad10034df58cfda280c445c11
-  sass-embedded (1.105.1-arm-linux-gnueabihf) sha256=8c134162e7d8769a01a3775aff66b14e97677f3eda025dc353b0f994ad50e058
-  sass-embedded (1.105.1-arm-linux-musleabihf) sha256=7e1c8b19c1304d7930e9c95d066b63fe19c3e50aea301c70981dfa543e80b4bf
-  sass-embedded (1.105.1-arm64-darwin) sha256=e414773b18cd25851c292e34a2462eae04011fffc0eb94d5b65a40f29b1044ac
-  sass-embedded (1.105.1-x86_64-darwin) sha256=8cd6e33e1511f76f3f65001998cba419cffbccdeb699c6abedb36fd24dc3d46f
-  sass-embedded (1.105.1-x86_64-linux-gnu) sha256=9038bc2256d7ecbfd352c15b77a3c8b6f0b72b763348d26564b5c0a123f48351
-  sass-embedded (1.105.1-x86_64-linux-musl) sha256=be8897b9e2e27e9a6eac30e198ec7c9479b255f0a9da3109d4749e544ed75a11
+  sass-embedded (1.77.8-aarch64-linux-gnu) sha256=c40aaf9bf49e4851f5d7be2d3009df5b81e668fe8ed8a728599ee10be969d61c
+  sass-embedded (1.77.8-aarch64-linux-musl) sha256=d8ba5ffd60eac531dfe258892705bc09f157cc3590ff5efd10dbcf94f44bfce4
+  sass-embedded (1.77.8-arm-linux-gnueabihf) sha256=6f4a9bac1639a2d51d7df6ba2493ddc19eb3ed9b4849d92a9ad5c7eb5f74bcba
+  sass-embedded (1.77.8-arm-linux-musleabihf) sha256=044d06932fd1575d689d36ab478a3d4c4b49df05b16788db4d4ce7a46eb3e604
+  sass-embedded (1.77.8-arm64-darwin) sha256=67078593eb72d43ecd4c05d1e207a37147c817caeb69dc829b369c222be90715
+  sass-embedded (1.77.8-x86_64-darwin) sha256=f7ffac66aee5f910ed073ead33889a4493d3e8fd9bbb943dbf56ead6d3637727
+  sass-embedded (1.77.8-x86_64-linux-gnu) sha256=48fe9760e126490e5d80291f59d57b8940403b81b76b7076a054f4e7e355ebdc
+  sass-embedded (1.77.8-x86_64-linux-musl) sha256=23bf7f4e50852c85f5b7615dfd65680e3c09950baff83bdd0532ee2cc99143ce
   sawyer (0.9.3) sha256=0d0f19298408047037638639fe62f4794483fb04320269169bd41af2bdcf5e41
   securerandom (0.4.1) sha256=cc5193d414a4341b6e225f0cb4446aceca8e50d5e1888743fac16987638ea0b1
   terminal-table (3.0.2) sha256=f951b6af5f3e00203fb290a669e0a85c5dd5b051b3b023392ccfd67ba5abae91
