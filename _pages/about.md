@@ -28,6 +28,7 @@ You can find my publications on [Google Scholar](https://scholar.google.com/cita
 - *2026.09*: &nbsp;🎉🎉 Our paper "RB-LDC: Redundancy-Balanced Latent Coding for Robust Diffusion" is accepted to **NeurIPS 2026**.
 - *2026.08*: &nbsp;🎉🎉 Our paper "Codeword Masking Can Be Harmful Under Replay Attacks on HQC" is accepted to **ASIACRYPT 2026**.
 - *2026.06*: &nbsp;🏆 Our team passed the DGIST preliminary round of the **GRAVITY 2026** Startup Competition ($10,000 prize). [[slides]](files/GRAVITY2026.pdf)
+- *2025.11*: &nbsp;🏆 The DGIST UGRP team I assisted as a teaching assistant won the **Grand Prize** at the Post-Quantum Cryptography Migration Technology Contest ($2,000 prize). [[news]](https://www.newsis.com/view/NISX20251204_0003427839)
 
 # 📝 Publications 
 
@@ -42,6 +43,7 @@ You can find my publications on [Google Scholar](https://scholar.google.com/cita
 
 # 🎖 Honors and Awards
 - *2026.06*, **GRAVITY 2026 Startup Competition**, passed the DGIST preliminary round with a hardware-hacking (side-channel) certification service for cryptographic products. Prize: $10,000. \| [\[slides\]](files/GRAVITY2026.pdf)
+- *2025.11*, **Grand Prize (최우수상)**, Post-Quantum Cryptography Migration Technology Contest (양자내성암호 전환기술 공모전). Participated as a teaching assistant for the DGIST UGRP team that built an optimized PQC implementation on ARM Cortex-M4. Prize: $2,000. \| [\[news\]](https://www.newsis.com/view/NISX20251204_0003427839)
 
 # 📖 Educations
 - *2026.02 - present*, Ph.D. student, Department of Electrical Engineering and Computer Science, [DGIST](https://www.dgist.ac.kr/), Daegu, South Korea.
