@@ -25,16 +25,28 @@ You can find my publications on [Google Scholar](https://scholar.google.com/cita
 
 
 # 🔥 News
-- *2026.10*: &nbsp;🎉 Personal homepage launched.
+- *2026*: &nbsp;🎉🎉 Our paper "RB-LDC: Redundancy-Balanced Latent Coding for Robust Diffusion" is accepted to **NeurIPS 2026**.
+- *2026*: &nbsp;🎉🎉 Our paper "Codeword Masking Can Be Harmful Under Replay Attacks on HQC" is accepted to **ASIACRYPT 2026**.
 
 # 📝 Publications 
 
-<!-- TODO: fill in from Google Scholar -->
+<sup>†</sup> corresponding author
+
+- **RB-LDC: Redundancy-Balanced Latent Coding for Robust Diffusion**  
+  Hyunseok Jeong, **Jaeho Jeon**<sup>†</sup>, Young-Sik Kim  
+  *The Fortieth Annual Conference on Neural Information Processing Systems (**NeurIPS 2026**)*
+
+- **Codeword Masking Can Be Harmful Under Replay Attacks on HQC**  
+  **Jaeho Jeon**<sup>†</sup>, Yongseong Park, Jaeyeon Lee, Suseong Lee, Donghyen Kim, Young-Sik Kim  
+  *International Conference on the Theory and Application of Cryptology and Information Security (**ASIACRYPT 2026**)*  
+  [[ePrint 2026/071]](https://eprint.iacr.org/2026/071)
 
 # 🎖 Honors and Awards
 
 <!-- TODO -->
 
 # 📖 Educations
-
-<!-- TODO -->
+- *2026.03 - present*, Ph.D. student, Department of Electrical Engineering and Computer Science, [DGIST](https://www.dgist.ac.kr/), Daegu, South Korea.
+- *2024.03 - 2026.02*, M.S., Department of Electrical Engineering and Computer Science, [DGIST](https://www.dgist.ac.kr/), Daegu, South Korea.
+- *2017.03 - 2024.02*, B.S., School of Undergraduate Studies, [DGIST](https://www.dgist.ac.kr/), Daegu, South Korea.
+- *2014.03 - 2017.02*, Cheonan Eopseong High School, Cheonan, South Korea.
