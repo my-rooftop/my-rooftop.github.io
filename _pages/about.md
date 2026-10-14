@@ -23,6 +23,7 @@ My goal is to become a uniquely recognized expert in side-channel analysis, so t
 
 
 # 🔥 News
+- *2026.10*: &nbsp;🏆 Our paper on post-quantum secure session resumption for satellite non-terrestrial networks (NTN) is selected for the **4th KICS HFR Paper Grand Prize** (제4회 KICS HFR 논문대상, total $10,000 prize).
 - *2026.09*: &nbsp;🎉🎉 Our paper "RB-LDC: Redundancy-Balanced Latent Coding for Robust Diffusion" is accepted to **NeurIPS 2026**.
 - *2026.08*: &nbsp;🎉🎉 Our paper "Codeword Masking Can Be Harmful Under Replay Attacks on HQC" is accepted to **ASIACRYPT 2026**.
 - *2026.06*: &nbsp;🏆 Our team passed the DGIST preliminary round of the **GRAVITY 2026** Startup Competition ($10,000 prize). [[slides]](files/GRAVITY2026.pdf) [[photo]](images/gravity2026.jpg)
@@ -40,6 +41,7 @@ My goal is to become a uniquely recognized expert in side-channel analysis, so t
   [[ePrint 2026/071]](https://eprint.iacr.org/2026/071)
 
 # 🎖 Honors and Awards
+- *2026.10*, **4th KICS HFR Paper Grand Prize (제4회 KICS HFR 논문대상)**, hosted by the Korean Institute of Communications and Information Sciences (KICS, 한국통신학회) and sponsored by HFR, Inc. Awarded to our paper (Yongseong Park, Hyunseok Jeong, **Jaeho Jeon**) on bringing post-quantum cryptography to satellite non-terrestrial networks (NTN): it proposes the AMTR protocol, which strictly separates session-resumption keys by ground station, epoch, and serial through a three-way handshake, together with an exposure-budget-based optimal ticket-placement theory, so that compromising a single ground station no longer leaks every session key under IKEv2-style session resumption. Total prize: $10,000. Award ceremony at the 2026 KICS Fall Conference (2026.11.19).
 - *2026.06*, **GRAVITY 2026 Startup Competition**, passed the DGIST preliminary round with a hardware-hacking (side-channel) certification service for cryptographic products. Prize: $10,000. \| [\[slides\]](files/GRAVITY2026.pdf) \| [\[photo\]](images/gravity2026.jpg)
 
 # 🏫 Teaching
