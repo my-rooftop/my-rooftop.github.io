@@ -28,7 +28,7 @@ You can find my publications on [Google Scholar](https://scholar.google.com/cita
 - *2026.09*: &nbsp;🎉🎉 Our paper "RB-LDC: Redundancy-Balanced Latent Coding for Robust Diffusion" is accepted to **NeurIPS 2026**.
 - *2026.08*: &nbsp;🎉🎉 Our paper "Codeword Masking Can Be Harmful Under Replay Attacks on HQC" is accepted to **ASIACRYPT 2026**.
 - *2026.06*: &nbsp;🏆 Our team passed the DGIST preliminary round of the **GRAVITY 2026** Startup Competition ($10,000 prize). [[slides]](files/GRAVITY2026.pdf) [[photo]](images/gravity2026.jpg)
-- *2025.11*: &nbsp;🏆 The DGIST UGRP team I assisted as a teaching assistant won the **Grand Prize** at the Post-Quantum Cryptography Migration Technology Contest ($2,000 prize). [[news]](https://www.newsis.com/view/NISX20251204_0003427839)
+- *2025.11*: &nbsp;🏆 The DGIST UGRP team I assisted as a teaching assistant won the **Grand Prize** at the NIA PQC Migration Challenge ($2,000 prize) [[news]](https://www.newsis.com/view/NISX20251204_0003427839) [[photo]](images/pqc_challenge2025.jpg) and the **Grand Prize** for the Undergraduate Best Paper Award at the 2025 KICS Fall Conference [[photo]](images/kics2025.jpg).
 
 # 📝 Publications 
 
@@ -44,7 +44,10 @@ You can find my publications on [Google Scholar](https://scholar.google.com/cita
 # 🎖 Honors and Awards
 - *2026.06*, **GRAVITY 2026 Startup Competition**, passed the DGIST preliminary round with a hardware-hacking (side-channel) certification service for cryptographic products. Prize: $10,000. \| [\[slides\]](files/GRAVITY2026.pdf) \| [\[photo\]](images/gravity2026.jpg)  
   <a href='images/gravity2026.jpg'><img src='images/gravity2026.jpg' alt='GRAVITY 2026 DGIST preliminary round' style='width: 320px; max-width: 100%; border-radius: 6px; margin-top: 0.4em;'></a>
-- *2025.11*, **Grand Prize (최우수상)**, Post-Quantum Cryptography Migration Technology Contest (양자내성암호 전환기술 공모전). Participated as a teaching assistant for the DGIST UGRP team that built an optimized PQC implementation on ARM Cortex-M4. Prize: $2,000. \| [\[news\]](https://www.newsis.com/view/NISX20251204_0003427839)
+- *2025.11*, **Grand Prize (최우수상)**, PQC Migration Challenge (양자내성암호 전환기술 공모전), hosted by the National Information Society Agency (NIA, 한국지능정보사회진흥원). Participated as a teaching assistant for the DGIST UGRP team that built an optimized PQC implementation on ARM Cortex-M4. Prize: $2,000. \| [\[news\]](https://www.newsis.com/view/NISX20251204_0003427839) \| [\[photo\]](images/pqc_challenge2025.jpg)  
+  <a href='images/pqc_challenge2025.jpg'><img src='images/pqc_challenge2025.jpg' alt='PQC Migration Challenge Grand Prize' style='width: 320px; max-width: 100%; border-radius: 6px; margin-top: 0.4em;'></a>
+- *2025.11*, **Grand Prize (최우수상)**, Undergraduate Best Paper Award, 2025 KICS Fall Conference (한국통신학회 추계종합학술발표회). Participated as a teaching assistant for the DGIST UGRP team. \| [\[news\]](https://www.newsis.com/view/NISX20251204_0003427839) \| [\[photo\]](images/kics2025.jpg)  
+  <a href='images/kics2025.jpg'><img src='images/kics2025.jpg' alt='KICS 2025 Fall Conference Undergraduate Best Paper Award' style='width: 320px; max-width: 100%; border-radius: 6px; margin-top: 0.4em;'></a>
 
 # 📖 Educations
 - *2026.02 - present*, Ph.D. student, Department of Electrical Engineering and Computer Science, [DGIST](https://www.dgist.ac.kr/), Daegu, South Korea.
