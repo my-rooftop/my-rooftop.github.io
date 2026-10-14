@@ -41,11 +41,10 @@ My goal is to become a uniquely recognized expert in side-channel analysis, so t
 
 # 🎖 Honors and Awards
 - *2026.06*, **GRAVITY 2026 Startup Competition**, passed the DGIST preliminary round with a hardware-hacking (side-channel) certification service for cryptographic products. Prize: $10,000. \| [\[slides\]](files/GRAVITY2026.pdf) \| [\[photo\]](images/gravity2026.jpg)
-- *2025.11*, **Grand Prize (최우수상) × 2**, for the DGIST UGRP team's optimized PQC implementation on ARM Cortex-M4, which I supported as a teaching assistant: the PQC Migration Challenge (양자내성암호 전환기술 공모전) hosted by the National Information Society Agency (NIA, 한국지능정보사회진흥원), prize $2,000 [\[photo\]](images/pqc_challenge2025.jpg), and the Undergraduate Best Paper Award at the 2025 KICS Fall Conference (한국통신학회 추계종합학술발표회) [\[photo\]](images/kics2025.jpg). \| [\[news\]](https://www.newsis.com/view/NISX20251204_0003427839)
 
 # 🏫 Teaching
 - *2026.06 - 2026.09*, **Teaching Assistant**, Pre-URP, DGIST. Mentored a student team on the project *"Reading the Current to Break Ciphers: Side-Channel Analysis on RSA/AES"* (advisor: Prof. Young-Sik Kim). \| [\[photo\]](images/preurp2026.jpg)
-- *2025*, **Teaching Assistant**, UGRP (Undergraduate Group Research Program), DGIST. Supported the team that built an optimized PQC implementation on ARM Cortex-M4, which won two Grand Prizes (see Honors and Awards).
+- *2025.03 - 2025.12*, **Teaching Assistant**, UGRP (Undergraduate Group Research Program), DGIST. Supported the student team that built an optimized PQC implementation on ARM Cortex-M4. The team won two **Grand Prizes (최우수상)**: the PQC Migration Challenge (양자내성암호 전환기술 공모전) hosted by the National Information Society Agency (NIA, 한국지능정보사회진흥원), prize $2,000 [\[photo\]](images/pqc_challenge2025.jpg), and the Undergraduate Best Paper Award at the 2025 KICS Fall Conference (한국통신학회 추계종합학술발표회) [\[photo\]](images/kics2025.jpg). \| [\[news\]](https://www.newsis.com/view/NISX20251204_0003427839)
 
 # 📖 Educations
 - *2026.02 - present*, Ph.D. student, Department of Electrical Engineering and Computer Science, [DGIST](https://www.dgist.ac.kr/), Daegu, South Korea.
