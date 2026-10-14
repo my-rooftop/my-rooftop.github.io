@@ -107,3 +107,11 @@ h1:before, .anchor:before {
     background-color: #00369f;
     font-size: .8em;
 }
+/* News: show about three items, scroll for the rest */
+.news-box {
+  max-height: 5.7em;
+  overflow-y: auto;
+  padding-right: 0.5em;
+  margin-bottom: 1.5em;
+  ul { margin-top: 0; margin-bottom: 0; }
+}
