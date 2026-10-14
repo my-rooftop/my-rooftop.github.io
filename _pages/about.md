@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Hi! I am **Jaeho Jeon** (전재호, 田宰昊), a Ph.D. student at [DGIST](https://www.dgist.ac.kr/) (Daegu Gyeongbuk Institute of Science and Technology), advised by Prof. [Young-Sik Kim](https://sites.google.com/view/pacl/home) in the [PACL](https://sites.google.com/view/pacl/home) lab. My research focuses on **side-channel analysis**.
+Hi! I am **Jaeho Jeon** (전재호, 田宰昊), a Ph.D. student at [DGIST](https://www.dgist.ac.kr/) (Daegu Gyeongbuk Institute of Science and Technology), advised by Prof. [Young-Sik Kim](https://scholar.google.com/citations?hl=en&user=pw4KEiAAAAAJ) in the [PACL](https://sites.google.com/view/pacl/home) lab. My research focuses on **side-channel analysis**.
 
 My goal is to become a uniquely recognized expert in side-channel analysis, so that anyone in Korea who needs side-channel analysis naturally turns to me or the PACL lab. Building on side-channel analysis as my core, I plan to gradually expand my research into computer architecture, quantum computing, networking, and coding theory.
 
