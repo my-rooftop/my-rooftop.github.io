@@ -51,7 +51,7 @@ My goal is to become a uniquely recognized expert in side-channel analysis, so t
 - *2025.03 - 2025.12*, **Teaching Assistant**, UGRP (Undergraduate Group Research Program), DGIST. Supported the student team that built an optimized PQC implementation on ARM Cortex-M4. The team won two **Grand Prizes (최우수상)**: the PQC Migration Challenge (양자내성암호 전환기술 공모전) hosted by the National Information Society Agency (NIA, 한국지능정보사회진흥원), prize $2,000 [\[photo\]](images/pqc_challenge2025.jpg), and the Undergraduate Best Paper Award at the 2025 KICS Fall Conference (한국통신학회 추계종합학술발표회) [\[photo\]](images/kics2025.jpg). \| [\[news\]](https://www.newsis.com/view/NISX20251204_0003427839)
 
 # 🤝 Academic Services
-- *2026.07.06 - 2026.07.10*, **Staff**, DGIST AI & Crypto Summer Camp 2026. Helped plan the camp and hosted the rump session. \| [\[photo 1\]](images/cryptocamp2026_1.jpg) [\[photo 2\]](images/cryptocamp2026_2.jpg) [\[photo 3\]](images/cryptocamp2026_3.jpg)
+- *2026.07.06 - 2026.07.10*, **Staff**, DGIST AI & Crypto Summer Camp 2026. Organized the camp and hosted the rump session. \| [\[photo 1\]](images/cryptocamp2026_1.jpg) [\[photo 2\]](images/cryptocamp2026_2.jpg) [\[photo 3\]](images/cryptocamp2026_3.jpg)
 - *2026.04 - 2026.09*, **President**, DGIST Graduate Student Council (대학원단 대표), DGIST.
 - *2026.03 - present*, **Graduate Student Representative** (대학원 대표 학생), DGIST.
 - *2024.10.30*, **Treasurer (총무)**, 2024 EECS & AI DGIST Student Conference & Happy Hour, DGIST. \| [\[photo 1\]](images/eecs_conf2024_1.jpg) [\[photo 2\]](images/eecs_conf2024_2.jpg) [\[photo 3\]](images/eecs_conf2024_3.jpg)
