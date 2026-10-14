@@ -23,7 +23,7 @@ My goal is to become a uniquely recognized expert in side-channel analysis, so t
 
 
 # 🔥 News
-- *2026.09.23*: &nbsp;🏆 <span style='color:#d33; font-weight:bold;'>[NEW]</span> Grand Prize, **4th KICS HFR Paper Award** (제4회 KICS HFR 논문대상 대상수상) — Yongseong Park, Hyunseok Jeong, **Jaeho Jeon**.
+- *2026.09.23*: &nbsp;🏆 Grand Prize, **4th KICS HFR Paper Award** (제4회 KICS HFR 논문대상 대상수상) — Yongseong Park, Hyunseok Jeong, **Jaeho Jeon**.
 - *2026.09*: &nbsp;🎉🎉 Our paper "RB-LDC: Redundancy-Balanced Latent Coding for Robust Diffusion" is accepted to **NeurIPS 2026**.
 - *2026.08*: &nbsp;🎉🎉 Our paper "Codeword Masking Can Be Harmful Under Replay Attacks on HQC" is accepted to **ASIACRYPT 2026**.
 - *2026.06*: &nbsp;🏆 Our team passed the DGIST preliminary round of the **GRAVITY 2026** Startup Competition ($10,000 prize). [[slides]](files/GRAVITY2026.pdf) [[photo]](images/gravity2026.jpg)
@@ -41,7 +41,7 @@ My goal is to become a uniquely recognized expert in side-channel analysis, so t
   [[ePrint 2026/071]](https://eprint.iacr.org/2026/071)
 
 # 🎖 Honors and Awards
-- *2026.09.23*, <span style='color:#d33; font-weight:bold;'>[NEW]</span> **Grand Prize, 4th KICS HFR Paper Award (제4회 KICS HFR 논문대상 대상)**, Yongseong Park, Hyunseok Jeong, **Jaeho Jeon**. Total prize: $10,000.
+- *2026.09.23*, **Grand Prize, 4th KICS HFR Paper Award (제4회 KICS HFR 논문대상 대상)**, Yongseong Park, Hyunseok Jeong, **Jaeho Jeon**. Total prize: $10,000.
 - *2026.06*, **GRAVITY 2026 Startup Competition**, passed the DGIST preliminary round with a hardware-hacking (side-channel) certification service for cryptographic products. Prize: $10,000. \| [\[slides\]](files/GRAVITY2026.pdf) \| [\[photo\]](images/gravity2026.jpg)
 
 # 🏫 Teaching
