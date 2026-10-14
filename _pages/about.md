@@ -52,8 +52,8 @@ My goal is to become a uniquely recognized expert in side-channel analysis, so t
 
 # 🤝 Academic Services
 - *2026.07.06 - 2026.07.10*, **Staff**, DGIST AI & Crypto Summer Camp 2026. Organized the camp and hosted the rump session. \| [\[photo 1\]](images/cryptocamp2026_1.jpg) [\[photo 2\]](images/cryptocamp2026_2.jpg) [\[photo 3\]](images/cryptocamp2026_3.jpg)
-- *2026.04 - 2026.09*, **President**, DGIST Graduate Student Council (대학원단 대표), DGIST.
-- *2026.03 - present*, **Graduate Student Representative** (대학원 대표 학생), DGIST.
+- *2026.04 - 2026.09*, **President**, DGIST Graduate Student Council (대학원단 대표), representing graduate students of all departments, DGIST.
+- *2026.03 - present*, **Graduate Student Representative**, Department of Electrical Engineering and Computer Science (전기전자컴퓨터공학과 대학원 대표 학생), DGIST.
 - *2024.10.30*, **Treasurer (총무)**, 2024 EECS & AI DGIST Student Conference & Happy Hour, DGIST. \| [\[photo 1\]](images/eecs_conf2024_1.jpg) [\[photo 2\]](images/eecs_conf2024_2.jpg) [\[photo 3\]](images/eecs_conf2024_3.jpg)
 
 # 📖 Educations
