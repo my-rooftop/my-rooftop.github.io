@@ -49,7 +49,7 @@ My goal is to become a uniquely recognized expert in side-channel analysis, so t
 - *2025.03 - 2025.12*, **Teaching Assistant**, UGRP (Undergraduate Group Research Program), DGIST. Supported the student team that built an optimized PQC implementation on ARM Cortex-M4. The team won two **Grand Prizes (최우수상)**: the PQC Migration Challenge (양자내성암호 전환기술 공모전) hosted by the National Information Society Agency (NIA, 한국지능정보사회진흥원), prize $2,000 [\[photo\]](images/pqc_challenge2025.jpg), and the Undergraduate Best Paper Award at the 2025 KICS Fall Conference (한국통신학회 추계종합학술발표회) [\[photo\]](images/kics2025.jpg). \| [\[news\]](https://www.newsis.com/view/NISX20251204_0003427839)
 
 # 🤝 Academic Services
-- *2026.07.06 - 2026.07.10*, **Organizing Committee Member**, DGIST Crypto Summer Camp 2026. Helped plan the camp and hosted the rump session. \| [\[photo 1\]](images/cryptocamp2026_1.jpg) [\[photo 2\]](images/cryptocamp2026_2.jpg) [\[photo 3\]](images/cryptocamp2026_3.jpg)
+- *2026.07.06 - 2026.07.10*, **Organizing Committee Member**, DGIST AI & Crypto Summer Camp 2026. Helped plan the camp and hosted the rump session. \| [\[photo 1\]](images/cryptocamp2026_1.jpg) [\[photo 2\]](images/cryptocamp2026_2.jpg) [\[photo 3\]](images/cryptocamp2026_3.jpg)
 
 # 📖 Educations
 - *2026.02 - present*, Ph.D. student, Department of Electrical Engineering and Computer Science, [DGIST](https://www.dgist.ac.kr/), Daegu, South Korea.
