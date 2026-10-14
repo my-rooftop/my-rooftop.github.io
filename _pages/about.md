@@ -65,8 +65,6 @@ My goal is to become a uniquely recognized expert in side-channel analysis, so t
 # 🐱 Cats
 
 <div class="cat-grid">
-<div class="cat-card"><a href="images/cat_kongkong.jpg"><img src="images/cat_kongkong.jpg" alt="Kongkong"></a><p class="cat-text"><strong>Kongkong (콩콩)</strong> · female, born 2020, living with me since 2022.<br>Timid at heart, but very sweet and affectionate.</p></div>
-<div class="cat-card"><a href="images/cat_kongkongkong.jpg"><img src="images/cat_kongkongkong.jpg" alt="Kongkongkong"></a><p class="cat-text"><strong>Kongkongkong (콩콩콩, a.k.a. Kong³)</strong> · female, born December 2021, foster cat with me since February 2026.<br>Very affectionate, but occasionally has a temper.</p></div>
+<div class="cat-card"><a href="images/cat_kongkong.jpg"><img class="cat-avatar" src="images/cat_kongkong.jpg" alt="Kongkong"></a><div class="cat-name">Kongkong <span class="cat-kr">콩콩</span></div><div class="cat-meta">♀ · born 2020 · with me since 2022</div><div class="cat-desc">Timid at heart, but very sweet and affectionate.</div></div>
+<div class="cat-card"><a href="images/cat_kongkongkong.jpg"><img class="cat-avatar" src="images/cat_kongkongkong.jpg" alt="Kongkongkong"></a><div class="cat-name">Kongkongkong <span class="cat-kr">콩콩콩 · Kong³</span></div><div class="cat-meta">♀ · born Dec 2021 · foster cat since Feb 2026</div><div class="cat-desc">Very affectionate, but occasionally has a temper.</div></div>
 </div>
-
-More of them on [YouTube](https://www.youtube.com/@boochoojeon1003).

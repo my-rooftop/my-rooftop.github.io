@@ -116,23 +116,33 @@ h1:before, .anchor:before {
   ul { margin-top: 0; margin-bottom: 0; }
 }
 
-/* Cats: two photo cards side by side */
+/* Cats: profile-style cards side by side */
 .cat-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 1em;
-  margin-bottom: 1.5em;
+  gap: 1.25em;
+  margin-bottom: 1em;
 }
 .cat-card {
-  flex: 1 1 260px;
-  max-width: 420px;
-  img {
-    width: 100%;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.15);
-  }
-  .cat-text { margin-top: 0.5em; font-size: 0.95em; }
-  .cat-text p { margin: 0; }
+  flex: 1 1 200px;
+  max-width: 260px;
+  padding: 1.25em 1em;
+  text-align: center;
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
 }
+.cat-avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #ddd;
+  padding: 3px;
+  background: #fff;
+}
+.cat-name { margin-top: 0.6em; font-size: 1.1em; font-weight: bold; }
+.cat-kr   { font-weight: normal; color: #777; font-size: 0.85em; }
+.cat-meta { margin-top: 0.2em; color: #777; font-size: 0.85em; }
+.cat-desc { margin-top: 0.5em; font-size: 0.9em; line-height: 1.5; }
