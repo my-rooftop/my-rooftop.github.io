@@ -115,3 +115,24 @@ h1:before, .anchor:before {
   margin-bottom: 1.5em;
   ul { margin-top: 0; margin-bottom: 0; }
 }
+
+/* Cats: two photo cards side by side */
+.cat-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin-bottom: 1.5em;
+}
+.cat-card {
+  flex: 1 1 260px;
+  max-width: 420px;
+  img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+  }
+  .cat-text { margin-top: 0.5em; font-size: 0.95em; }
+  .cat-text p { margin: 0; }
+}

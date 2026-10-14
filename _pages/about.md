@@ -61,3 +61,10 @@ My goal is to become a uniquely recognized expert in side-channel analysis, so t
 - *2024.02 - 2026.02*, M.S., Department of Electrical Engineering and Computer Science, [DGIST](https://www.dgist.ac.kr/), Daegu, South Korea.
 - *2017.02 - 2024.02*, B.S., School of Undergraduate Studies, [DGIST](https://www.dgist.ac.kr/), Daegu, South Korea.
 - *2014.03 - 2017.02*, Cheonan Upsung High School, Cheonan, South Korea.
+
+# 🐱 Cats
+
+<div class="cat-grid">
+<div class="cat-card"><a href="images/cat_kongkong.jpg"><img src="images/cat_kongkong.jpg" alt="Kongkong"></a><p class="cat-text"><strong>Kongkong (콩콩)</strong> · female, born 2020, living with me since 2022.<br>Timid at heart, but very sweet and affectionate.</p></div>
+<div class="cat-card"><a href="images/cat_kongkongkong.jpg"><img src="images/cat_kongkongkong.jpg" alt="Kongkongkong"></a><p class="cat-text"><strong>Kongkongkong (콩콩콩)</strong> · born December 2021, with me since February 2026 as a temporary housemate.<br>Very affectionate, but occasionally has a temper.</p></div>
+</div>
