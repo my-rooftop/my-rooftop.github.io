@@ -21,6 +21,8 @@ Hi! I am **Jaeho Jeon** (전재호, 田宰昊), a Ph.D. student at [DGIST](https
 
 My goal is to become a uniquely recognized expert in side-channel analysis, so that anyone in Korea who needs side-channel analysis naturally turns to me or the PACL lab. Building on side-channel analysis as my core, I plan to gradually expand my research into computer architecture, quantum computing, networking, and coding theory.
 
+<a href='https://scholar.google.com/citations?user=h2pBQrcAAAAJ&hl=en'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>
+
 
 # 🔥 News
 <div class='news-box' markdown='1'>
