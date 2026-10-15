@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }}</title>
+  <meta name="description" content="{{ page.description }}">
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="{{ page.description }}">
+  <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/images/sca-class/dalgu_lab.jpg">
+  <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/sca-class.css">
+  {% include analytics.html %}
+</head>
+<body class="event-body">
+{{ content }}
+<script src="{{ site.baseurl }}/assets/js/sca-class.js"></script>
+</body>
+</html>
