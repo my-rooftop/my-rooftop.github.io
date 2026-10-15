@@ -48,8 +48,8 @@ h2 { font-size: 1.6rem; }
 .scene-how { margin: 6px 8px 4px; font-size: 0.85rem; color: var(--muted); }
 
 /* svg text styles */
-.t-label { font: 900 20px "Noto Sans KR", sans-serif; fill: #1b2a41; }
-.t-status { font: 900 20px "Noto Sans KR", sans-serif; fill: #1f4f9c; }
+.t-label { font: 900 22px "Noto Sans KR", sans-serif; fill: #1b2a41; }
+.t-status { font: 900 22px "Noto Sans KR", sans-serif; fill: #1f4f9c; }
 .t-count { font: 900 16px "Noto Sans KR", sans-serif; fill: #1f4f9c; }
 .t-mono { font: 700 15px ui-monospace, "SF Mono", Menlo, Consolas, monospace; }
 .t-chip { font: 700 11px ui-monospace, Menlo, monospace; fill: #d8dde3; letter-spacing: 0.5px; }
@@ -61,7 +61,7 @@ h2 { font-size: 1.6rem; }
 .t-banner { font: 900 18px "Noto Sans KR", sans-serif; fill: #fff; }
 
 /* key bytes */
-.kt { fill: #a3acb8; font: 900 22px ui-monospace, "SF Mono", Menlo, Consolas, monospace; }
+.kt { fill: #a3acb8; font: 900 34px ui-monospace, "SF Mono", Menlo, Consolas, monospace; }
 .kt--locked { fill: #1f8a4c; }
 
 /* probe: hangs above the chip, drops onto it while probing */

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8">
+<title>부채널 분석 원데이 클래스 포스터</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+/*SITE_CSS*/
+@page { size: A4; margin: 0; }
+html, body { width: 210mm; height: 297mm; margin: 0; }
+body.event-body { background: var(--cream); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.poster { width: 210mm; height: 297mm; padding: 9mm 11mm 7mm; display: flex; flex-direction: column; gap: 3.8mm; overflow: hidden; }
+.topbar { display: flex; justify-content: space-between; align-items: center; }
+.topbar .lab { font-weight: 900; color: var(--blue-dark); font-size: 11pt; }
+.topbar .lab span { display: block; font-weight: 400; font-size: 7.5pt; color: var(--muted); }
+.pill { background: var(--ink); color: #fff; font-weight: 700; font-size: 8.5pt; padding: 2mm 5mm; border-radius: 999px; letter-spacing: .04em; }
+.top { display: grid; grid-template-columns: 1fr 1.05fr; gap: 6mm; align-items: center; }
+.top h1 { font-size: 30pt; line-height: 1.12; margin: 0 0 3mm; color: var(--blue-dark); }
+.top h1 em { font-style: normal; color: var(--ink); }
+.top .desc { font-size: 9.8pt; color: #2e3a4d; margin: 0 0 3.5mm; line-height: 1.55; }
+.top .chips { display: flex; flex-wrap: wrap; gap: 2mm; }
+.chip { font-size: 8.5pt; padding: 1mm 3.5mm; border-width: 1.5pt; }
+.scene-card { background: #fff; border: 1.5pt solid var(--line); border-radius: 5mm; padding: 3mm 3mm 2mm; }
+.scene-card svg { width: 100%; height: auto; display: block; }
+.scene-card .cap { font-size: 8pt; color: var(--muted); margin: 1.5mm 1mm 0; text-align: center; }
+#banner { opacity: 1; } #sparks { opacity: 1; } #blush { opacity: 1; }
+/*PROBE_DOWN*/
+.info-grid { grid-template-columns: repeat(3, 1fr); gap: 3mm; }
+.info { padding: 2.2mm 3.5mm; border-radius: 3.5mm; border-width: 1.5pt; }
+.info__k { font-size: 7.8pt; margin-bottom: .5mm; } .info__v { font-size: 10pt; line-height: 1.35; } .info__s { font-size: 7.6pt; }
+.info__s--strong { font-size: 8.2pt; margin-top: 1mm; }
+h2 { font-size: 13pt; margin: 0 0 2mm; }
+.timeline { border-width: 1.5pt; border-radius: 3.5mm; }
+.timeline li { grid-template-columns: 32mm 1fr; padding: 1.6mm 4mm; font-size: 9.2pt; }
+.badge-main { font-size: 6.8pt; } .tl__sub { font-size: 8pt; }
+.apply { padding: 5mm 6mm; border-radius: 5mm; display: grid; grid-template-columns: 1fr 34mm; gap: 5mm; align-items: center; }
+.apply h2 { color: #fff; font-size: 13pt; margin-bottom: 1.5mm; }
+.apply p { margin: 0 0 1.5mm; font-size: 9.2pt; line-height: 1.5; }
+.apply .mail { font-size: 15pt; font-weight: 900; color: #ffd166; margin: 1.5mm 0; }
+.apply .note { color: #cfd8e6; font-size: 8.4pt; }
+.qr { text-align: center; }
+.qr img { width: 30mm; height: 30mm; background: #fff; padding: 1.5mm; border-radius: 2.5mm; display: block; margin: 0 auto; }
+.qr div { font-size: 7pt; color: #cfd8e6; margin-top: 1.2mm; line-height: 1.35; white-space: nowrap; }
+.foot { display: flex; align-items: center; justify-content: space-between; color: var(--muted); font-size: 7.8pt; margin-top: auto; }
+.foot img { height: 11mm; background: #fff; border-radius: 2mm; }
+</style></head>
+<body class="event-body"><div class="poster">
+  <div class="topbar">
+    <div class="lab">DGIST PACL <span>Privacy and Applied Cryptography Lab. · 김영식 교수님 연구실</span></div>
+    <div class="pill">ONE-DAY CLASS</div>
+  </div>
+  <div class="top">
+    <div>
+      <h1>부채널 분석<br><em>원데이 클래스</em></h1>
+      <p class="desc">디바이스에서 새어 나오는 <strong>전력 소모</strong>로부터 비밀 정보를 알아내는 하드웨어 해킹 기법, '부채널 분석'을 하루 만에 직접 체험해 보세요! 암호 알고리즘을 배우고, 실제 장비로 <strong>AES 비밀키를 복구하는 실험</strong>까지 해봅니다.</p>
+      <div class="chips">
+        <span class="chip chip--dark">10월 23일(금) 13:00 – 18:30</span>
+        <span class="chip">E3 223호</span>
+        <span class="chip">5명 선정</span>
+        <span class="chip">🍕 간식 무한 제공</span>
+      </div>
+    </div>
+    <div class="scene-card">
+<!--SCENE-->
+      <div class="cap">달구가 전력 소모 파형을 모아 AES 비밀키를 복구하는 모습 · 이걸 직접 해봅니다</div>
+    </div>
+  </div>
+
+  <div class="info-grid">
+    <div class="info"><div class="info__k">📅 일시</div><div class="info__v">10월 23일(금) 13:00 – 18:30</div><div class="info__s">EECS 학과 홍보 행사 이후 진행</div></div>
+    <div class="info"><div class="info__k">📍 장소</div><div class="info__v">E3 223호</div></div>
+    <div class="info"><div class="info__k">👥 인원</div><div class="info__v">5명 선정</div><div class="info__s">10월 21일(수)까지 신청 · 개별 통보 · 초과 시 10월 30일(금) 2차 진행</div></div>
+    <div class="info"><div class="info__k">🎯 대상</div><div class="info__v">진로를 탐색 중인 기초학부생, 하드웨어 해킹에 관심 있는 누구나</div><div class="info__s info__s--strong">⚠️ Python · C 기본 문법 필수</div></div>
+    <div class="info"><div class="info__k">💻 준비물</div><div class="info__v">개인 노트북</div></div>
+    <div class="info"><div class="info__k">🍕 혜택</div><div class="info__v">간식 무한 제공</div><div class="info__s">저녁은 먹고 싶은 메뉴로 시켜드립니다!</div></div>
+  </div>
+
+  <div>
+    <h2>진행 일정</h2>
+    <ol class="timeline">
+      <li><span class="tl__time">13:00 – 13:20</span><span class="tl__what">연구실 소개</span></li>
+      <li><span class="tl__time">13:20 – 13:50</span><span class="tl__what">부채널 분석 소개</span></li>
+      <li><span class="tl__time">14:00 – 14:50</span><span class="tl__what">암호 알고리즘 기초 설명</span></li>
+      <li><span class="tl__time">15:00 – 15:50</span><span class="tl__what">개인 노트북 실험 장비 세팅</span></li>
+      <li class="tl--main"><span class="tl__time">16:00 – 17:20</span><span class="tl__what">AES 비밀키 복구 실험 <span class="badge-main">메인 실험</span></span></li>
+      <li><span class="tl__time">17:30 – 18:30</span><span class="tl__what">선배와의 저녁식사 <span class="tl__sub">먹고 싶은 걸로 시켜 드려요!</span></span></li>
+    </ol>
+  </div>
+
+  <div class="apply">
+    <div>
+      <h2>신청 방법</h2>
+      <p>⏰ 신청은 <strong>10월 21일 수요일까지</strong> 받습니다.</p>
+      <p>이름 · 학년 · 카카오톡 ID · <strong>지원 동기 한 줄</strong>을 적어 아래 메일로 보내 주세요.</p>
+      <div class="mail">dgwogh@dgist.ac.kr</div>
+      <p class="note">신청자 중 5명을 선정해 개별 통보합니다. 신청 인원이 많으면 10월 30일(금)에 2차 클래스를 진행합니다.</p>
+    </div>
+    <div class="qr"><img src="qr.png" alt="QR"><div>QR을 찍으면 애니메이션과<br>자세한 안내 페이지로!<br><span style="font-size:6.4pt">my-rooftop.github.io/sca-class</span></div></div>
+  </div>
+
+  <div class="foot">
+    <div>DGIST PACL · Privacy and Applied Cryptography Lab. &nbsp;·&nbsp; 문의 dgwogh@dgist.ac.kr (전재호, 박사과정)</div>
+    <img src="../images/sca-class/pacl_logo.png" alt="PACL@DGIST">
+  </div>
+</div></body></html>

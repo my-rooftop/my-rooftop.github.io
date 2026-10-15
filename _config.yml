@@ -66,6 +66,7 @@ include:
   - files
 exclude:
   - docs
+  - poster
   - google_scholar_crawler
   - "*.sublime-project"
   - "*.sublime-workspace"
