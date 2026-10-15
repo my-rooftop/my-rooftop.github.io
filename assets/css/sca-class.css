@@ -52,7 +52,10 @@ h2 { font-size: 1.6rem; }
 .t-status { font: 900 18px "Noto Sans KR", sans-serif; fill: #1f4f9c; }
 .t-count { font: 900 16px "Noto Sans KR", sans-serif; fill: #1f4f9c; }
 .t-mono { font: 700 15px ui-monospace, "SF Mono", Menlo, Consolas, monospace; }
-.t-chip { font: 700 11px ui-monospace, Menlo, monospace; fill: #bbb; }
+.t-chip { font: 700 11px ui-monospace, Menlo, monospace; fill: #d8dde3; letter-spacing: 0.5px; }
+.t-chip2 { font: 900 10px ui-monospace, Menlo, monospace; fill: #8fd9a8; }
+.t-chip3 { font: 500 6.5px ui-monospace, Menlo, monospace; fill: #8a9099; }
+.t-silk { font: 700 6px ui-monospace, Menlo, monospace; fill: #e9f3ec; opacity: 0.9; }
 .t-coat { font: 900 9px "Noto Sans KR", sans-serif; fill: #1f4f9c; }
 .t-coat2 { font: 700 8px "Noto Sans KR", sans-serif; fill: #1f4f9c; }
 .t-banner { font: 900 18px "Noto Sans KR", sans-serif; fill: #fff; }
@@ -113,6 +116,8 @@ h2 { font-size: 1.6rem; }
 .apply a { color: #ffd166; }
 .apply .btn--primary { color: #fff; background: var(--blue); }
 .apply__note { margin-top: 14px; color: #cfd8e6; }
+.apply__deadline { font-size: 1.15rem; margin: 0 0 6px; }
+.apply__deadline strong { color: #ffd166; }
 .apply__links { font-size: 0.9rem; color: #9fb0c6; }
 
 .event-footer { max-width: 1120px; margin: 0 auto; padding: 10px 16px 40px; display: flex; gap: 16px; align-items: center; color: var(--muted); font-size: 0.85rem; }
