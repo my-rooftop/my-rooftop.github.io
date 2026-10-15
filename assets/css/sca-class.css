@@ -61,7 +61,7 @@ h2 { font-size: 1.6rem; }
 .t-banner { font: 900 18px "Noto Sans KR", sans-serif; fill: #fff; }
 
 /* key bytes */
-.kt { fill: #a3acb8; font: 900 24px ui-monospace, "SF Mono", Menlo, Consolas, monospace; }
+.kt { fill: #a3acb8; font: 900 22px ui-monospace, "SF Mono", Menlo, Consolas, monospace; }
 .kt--locked { fill: #1f8a4c; }
 
 /* probe: hangs above the chip, drops onto it while probing */
