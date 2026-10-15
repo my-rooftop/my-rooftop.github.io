@@ -21,7 +21,7 @@
   var texts = [];
   for (var i = 0; i < 16; i++) {
     var t = document.createElementNS(NS, 'text');
-    t.setAttribute('x', 347.5 + i * 27); t.setAttribute('y', 70); t.setAttribute('text-anchor', 'middle');
+    t.setAttribute('x', 327.5 + i * 31); t.setAttribute('y', 94); t.setAttribute('text-anchor', 'middle');
     t.setAttribute('class', 'kt');
     t.textContent = '??';
     keyG.appendChild(t); texts.push(t);

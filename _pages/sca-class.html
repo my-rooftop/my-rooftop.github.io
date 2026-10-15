@@ -36,7 +36,7 @@ analytics: false
         </defs>
 
         <!-- ===== Dalgu (official illustration), sitting behind the desk ===== -->
-        <g id="dalgu" transform="translate(40 70)"><g id="dalgu-body">
+        <g id="dalgu" transform="translate(40 92)"><g id="dalgu-body">
           <g id="fur" opacity="0" stroke="#1b1b1b" stroke-width="4" stroke-linecap="round" fill="#5b8ad1">
             <path d="M 128 2 L 118 -26 L 140 -2 Z"/><path d="M 155 -2 L 155 -32 L 169 -4 Z"/><path d="M 184 2 L 194 -26 L 172 -2 Z"/>
           </g>
@@ -45,12 +45,12 @@ analytics: false
         </g></g>
 
         <!-- ===== desk (in front of Dalgu) ===== -->
-        <rect x="0" y="330" width="900" height="130" fill="#e4ebf4"/>
-        <rect x="0" y="330" width="900" height="6" fill="#cfd9e6"/>
-        <rect x="0" y="410" width="900" height="50" fill="#d6dfeb"/>
+        <rect x="0" y="352" width="900" height="108" fill="#e4ebf4"/>
+        <rect x="0" y="352" width="900" height="6" fill="#cfd9e6"/>
+        <rect x="0" y="428" width="900" height="32" fill="#d6dfeb"/>
 
         <!-- ===== PCB: side-channel target board ===== -->
-        <g id="board">
+        <g id="board" transform="translate(0 22)">
           <defs>
             <linearGradient id="pcbGrad" x1="0" y1="0" x2="1" y2="1">
               <stop offset="0" stop-color="#1f7a4d"/><stop offset="1" stop-color="#145c39"/>
@@ -131,7 +131,7 @@ analytics: false
         </g>
 
         <!-- sparks around chip -->
-        <g id="sparks" opacity="0">
+        <g id="sparks" opacity="0" transform="translate(0 22)">
           <polyline points="432,318 444,304 438,318 450,308" fill="none" stroke="#ffcc00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
           <polyline points="514,318 526,304 520,318 532,308" fill="none" stroke="#ffcc00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
           <polyline points="462,314 452,296 466,308 458,292" fill="none" stroke="#ffe066" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -140,7 +140,7 @@ analytics: false
         </g>
 
         <!-- ===== oscilloscope (drawn last so the cable tucks behind it) ===== -->
-        <g id="scope">
+        <g id="scope" transform="translate(0 34)">
           <rect x="612" y="108" width="258" height="200" rx="14" fill="#e9eef5" stroke="#b9c6d8" stroke-width="3"/>
           <rect x="628" y="128" width="214" height="124" rx="6" fill="url(#screenGrad)"/>
           <g stroke="#2b3f5e" stroke-width="1" opacity="0.8">
@@ -156,15 +156,15 @@ analytics: false
 
         <!-- ===== key panel (big bytes, no boxes) ===== -->
         <g id="keypanel">
-          <text x="550" y="34" text-anchor="middle" class="t-label">🔑 AES-128 비밀키</text>
+          <text x="560" y="40" text-anchor="middle" class="t-label">🔑 AES-128 비밀키</text>
           <g id="keybytes"></g>
-          <text id="keystatus" x="550" y="96" text-anchor="middle" class="t-status">파형 수집 대기 중…</text>
+          <text id="keystatus" x="560" y="128" text-anchor="middle" class="t-status">파형 수집 대기 중…</text>
         </g>
 
         <!-- success banner -->
         <g id="banner" opacity="0">
-          <rect x="372" y="150" width="218" height="46" rx="23" fill="#1f8a4c"/>
-          <text x="481" y="180" text-anchor="middle" class="t-banner">🎉 AES 비밀키 복구 성공!</text>
+          <rect x="372" y="182" width="218" height="46" rx="23" fill="#1f8a4c"/>
+          <text x="481" y="212" text-anchor="middle" class="t-banner">🎉 AES 비밀키 복구 성공!</text>
         </g>
       </svg>
       <div class="scene-bar">
