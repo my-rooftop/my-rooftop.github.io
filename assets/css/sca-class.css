@@ -24,13 +24,15 @@ h2 { font-size: 1.6rem; }
 /* ----- hero ----- */
 .hero { padding: 32px 16px 24px; }
 .hero__inner { max-width: 1120px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1.25fr; gap: 32px; align-items: center; }
-.hero__lab { font-weight: 700; color: var(--blue-dark); margin-bottom: 8px; }
+.hero__labrow { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
+.hero__logo { width: 120px; height: auto; background: #fff; border-radius: 14px; border: 2px solid var(--line); padding: 6px; }
+.hero__lab { font-weight: 900; font-size: 1.15rem; color: var(--blue-dark); }
 .hero__lab span { display: block; font-weight: 400; font-size: 0.8rem; color: var(--muted); }
 .hero h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); line-height: 1.15; color: var(--blue-dark); }
 .hero h1 br + * { color: var(--ink); }
 .hero__desc { font-size: 1.05rem; color: #2e3a4d; margin: 12px 0 18px; }
 .hero__tags { font-weight: 700; color: var(--blue); margin: -8px 0 16px; font-size: 1rem; }
-.hero__chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+.hero__chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 4px; }
 .chip { border: 2px solid var(--ink); border-radius: 999px; padding: 4px 14px; font-weight: 700; font-size: 0.9rem; background: #fff; }
 .chip--dark { background: var(--ink); color: #fff; }
 .btn { display: inline-block; padding: 10px 20px; border-radius: 999px; font-weight: 700; text-decoration: none; margin: 4px 6px 4px 0; transition: transform .12s ease, box-shadow .12s ease; }

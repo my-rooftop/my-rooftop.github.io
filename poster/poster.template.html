@@ -9,7 +9,9 @@ html, body { width: 210mm; height: 297mm; margin: 0; }
 body.event-body { background: var(--cream); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 .poster { width: 210mm; height: 297mm; padding: 9mm 11mm 7mm; display: flex; flex-direction: column; gap: 3.8mm; overflow: hidden; }
 .topbar { display: flex; justify-content: space-between; align-items: center; }
-.topbar .lab { font-weight: 900; color: var(--blue-dark); font-size: 11pt; }
+.topbar .labrow { display: flex; align-items: center; gap: 4mm; }
+.topbar .logo { width: 24mm; background: #fff; border-radius: 3mm; border: 1.2pt solid var(--line); padding: 1.2mm; }
+.topbar .lab { font-weight: 900; color: var(--blue-dark); font-size: 12pt; }
 .topbar .lab span { display: block; font-weight: 400; font-size: 7.5pt; color: var(--muted); }
 .pill { background: var(--ink); color: #fff; font-weight: 700; font-size: 8.5pt; padding: 2mm 5mm; border-radius: 999px; letter-spacing: .04em; }
 .top { display: grid; grid-template-columns: 1fr 1.05fr; gap: 6mm; align-items: center; }
@@ -45,7 +47,7 @@ h2 { font-size: 13pt; margin: 0 0 2mm; }
 </style></head>
 <body class="event-body"><div class="poster">
   <div class="topbar">
-    <div class="lab">DGIST PACL <span>Privacy and Applied Cryptography Lab. · 김영식 교수님 연구실</span></div>
+    <div class="labrow"><img class="logo" src="../images/sca-class/pacl_logo.png" alt="PACL@DGIST"><div class="lab">DGIST PACL <span>Privacy and Applied Cryptography Lab.<br>김영식 교수님 연구실</span></div></div>
     <div class="pill">ONE-DAY CLASS</div>
   </div>
   <div class="top">
@@ -100,6 +102,5 @@ h2 { font-size: 13pt; margin: 0 0 2mm; }
 
   <div class="foot">
     <div>DGIST PACL · Privacy and Applied Cryptography Lab. &nbsp;·&nbsp; 문의 dgwogh@dgist.ac.kr (전재호, 박사과정)</div>
-    <img src="../images/sca-class/pacl_logo.png" alt="PACL@DGIST">
   </div>
 </div></body></html>

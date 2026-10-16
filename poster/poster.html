@@ -29,13 +29,15 @@ h2 { font-size: 1.6rem; }
 /* ----- hero ----- */
 .hero { padding: 32px 16px 24px; }
 .hero__inner { max-width: 1120px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1.25fr; gap: 32px; align-items: center; }
-.hero__lab { font-weight: 700; color: var(--blue-dark); margin-bottom: 8px; }
+.hero__labrow { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
+.hero__logo { width: 120px; height: auto; background: #fff; border-radius: 14px; border: 2px solid var(--line); padding: 6px; }
+.hero__lab { font-weight: 900; font-size: 1.15rem; color: var(--blue-dark); }
 .hero__lab span { display: block; font-weight: 400; font-size: 0.8rem; color: var(--muted); }
 .hero h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); line-height: 1.15; color: var(--blue-dark); }
 .hero h1 br + * { color: var(--ink); }
 .hero__desc { font-size: 1.05rem; color: #2e3a4d; margin: 12px 0 18px; }
 .hero__tags { font-weight: 700; color: var(--blue); margin: -8px 0 16px; font-size: 1rem; }
-.hero__chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+.hero__chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 4px; }
 .chip { border: 2px solid var(--ink); border-radius: 999px; padding: 4px 14px; font-weight: 700; font-size: 0.9rem; background: #fff; }
 .chip--dark { background: var(--ink); color: #fff; }
 .btn { display: inline-block; padding: 10px 20px; border-radius: 999px; font-weight: 700; text-decoration: none; margin: 4px 6px 4px 0; transition: transform .12s ease, box-shadow .12s ease; }
@@ -154,7 +156,9 @@ html, body { width: 210mm; height: 297mm; margin: 0; }
 body.event-body { background: var(--cream); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 .poster { width: 210mm; height: 297mm; padding: 9mm 11mm 7mm; display: flex; flex-direction: column; gap: 3.8mm; overflow: hidden; }
 .topbar { display: flex; justify-content: space-between; align-items: center; }
-.topbar .lab { font-weight: 900; color: var(--blue-dark); font-size: 11pt; }
+.topbar .labrow { display: flex; align-items: center; gap: 4mm; }
+.topbar .logo { width: 24mm; background: #fff; border-radius: 3mm; border: 1.2pt solid var(--line); padding: 1.2mm; }
+.topbar .lab { font-weight: 900; color: var(--blue-dark); font-size: 12pt; }
 .topbar .lab span { display: block; font-weight: 400; font-size: 7.5pt; color: var(--muted); }
 .pill { background: var(--ink); color: #fff; font-weight: 700; font-size: 8.5pt; padding: 2mm 5mm; border-radius: 999px; letter-spacing: .04em; }
 .top { display: grid; grid-template-columns: 1fr 1.05fr; gap: 6mm; align-items: center; }
@@ -190,7 +194,7 @@ h2 { font-size: 13pt; margin: 0 0 2mm; }
 </style></head>
 <body class="event-body"><div class="poster">
   <div class="topbar">
-    <div class="lab">DGIST PACL <span>Privacy and Applied Cryptography Lab. · 김영식 교수님 연구실</span></div>
+    <div class="labrow"><img class="logo" src="../images/sca-class/pacl_logo.png" alt="PACL@DGIST"><div class="lab">DGIST PACL <span>Privacy and Applied Cryptography Lab.<br>김영식 교수님 연구실</span></div></div>
     <div class="pill">ONE-DAY CLASS</div>
   </div>
   <div class="top">
@@ -386,6 +390,5 @@ h2 { font-size: 13pt; margin: 0 0 2mm; }
 
   <div class="foot">
     <div>DGIST PACL · Privacy and Applied Cryptography Lab. &nbsp;·&nbsp; 문의 dgwogh@dgist.ac.kr (전재호, 박사과정)</div>
-    <img src="../images/sca-class/pacl_logo.png" alt="PACL@DGIST">
   </div>
 </div></body></html>
