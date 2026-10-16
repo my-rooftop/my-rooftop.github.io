@@ -21,4 +21,6 @@ html=tpl.replace('/*SITE_CSS*/',css).replace('<!--SCENE-->',svg).replace('/*PROB
 open(f'{ROOT}/poster/poster.html','w').write(html)
 subprocess.run(['/Applications/Google Chrome.app/Contents/MacOS/Google Chrome','--headless=new','--disable-gpu','--no-pdf-header-footer','--virtual-time-budget=6000',
                 f'--print-to-pdf={ROOT}/poster/sca-class-poster.pdf',f'file://{ROOT}/poster/poster.html'],stderr=subprocess.DEVNULL,check=True)
-print('poster rebuilt:', f'{ROOT}/poster/sca-class-poster.pdf')
+subprocess.run(['/Applications/Google Chrome.app/Contents/MacOS/Google Chrome','--headless=new','--disable-gpu','--hide-scrollbars','--window-size=794,1123','--force-device-scale-factor=3','--virtual-time-budget=6000',
+                f'--screenshot={ROOT}/poster/sca-class-poster.png',f'file://{ROOT}/poster/poster.html'],stderr=subprocess.DEVNULL,check=True)
+print('poster rebuilt:', f'{ROOT}/poster/sca-class-poster.pdf', 'and .png (3x)')
