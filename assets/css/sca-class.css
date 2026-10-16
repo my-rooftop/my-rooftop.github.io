@@ -29,6 +29,7 @@ h2 { font-size: 1.6rem; }
 .hero h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); line-height: 1.15; color: var(--blue-dark); }
 .hero h1 br + * { color: var(--ink); }
 .hero__desc { font-size: 1.05rem; color: #2e3a4d; margin: 12px 0 18px; }
+.hero__tags { font-weight: 700; color: var(--blue); margin: -8px 0 16px; font-size: 1rem; }
 .hero__chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
 .chip { border: 2px solid var(--ink); border-radius: 999px; padding: 4px 14px; font-weight: 700; font-size: 0.9rem; background: #fff; }
 .chip--dark { background: var(--ink); color: #fff; }

@@ -34,6 +34,7 @@ h2 { font-size: 1.6rem; }
 .hero h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); line-height: 1.15; color: var(--blue-dark); }
 .hero h1 br + * { color: var(--ink); }
 .hero__desc { font-size: 1.05rem; color: #2e3a4d; margin: 12px 0 18px; }
+.hero__tags { font-weight: 700; color: var(--blue); margin: -8px 0 16px; font-size: 1rem; }
 .hero__chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
 .chip { border: 2px solid var(--ink); border-radius: 999px; padding: 4px 14px; font-weight: 700; font-size: 0.9rem; background: #fff; }
 .chip--dark { background: var(--ink); color: #fff; }
@@ -77,6 +78,15 @@ h2 { font-size: 1.6rem; }
 #sparks, #fur { transition: opacity .1s; }
 .zap #sparks { opacity: 1; animation: sparkle .18s steps(2) infinite; }
 .zap #fur { opacity: 1; }
+/* each strand of fur jitters on its own rhythm while zapped */
+.spike { transform-box: fill-box; transform-origin: 50% 100%; }
+.zap .s1 { animation: furWiggle .17s ease-in-out infinite alternate; }
+.zap .s2 { animation: furWiggle2 .13s ease-in-out infinite alternate; }
+.zap .s3 { animation: furWiggle .21s ease-in-out infinite alternate-reverse; }
+.zap .s4 { animation: furWiggle2 .19s ease-in-out infinite alternate-reverse; }
+.zap .s5 { animation: furWiggle .15s ease-in-out infinite alternate; }
+@keyframes furWiggle  { from { transform: translate(-3px, 2px) rotate(-14deg) scaleY(0.85); } to { transform: translate(3px, -3px) rotate(12deg) scaleY(1.2); } }
+@keyframes furWiggle2 { from { transform: translate(2px, -2px) rotate(10deg) scaleY(1.15); } to { transform: translate(-3px, 3px) rotate(-16deg) scaleY(0.8); } }
 .zap #dalgu-body { animation: shiver .12s linear infinite; }
 @keyframes sparkle { from { transform: translate(0,0); } to { transform: translate(1px,-1px); } }
 @keyframes shiver { 0% { transform: translate(0,0); } 50% { transform: translate(2px,-1px); } 100% { transform: translate(0,0); } }
@@ -89,7 +99,7 @@ h2 { font-size: 1.6rem; }
 
 @media (prefers-reduced-motion: reduce) {
   #probe, #sparks, #fur, #banner { transition: none; animation: none !important; }
-  .zap #dalgu-body, .done #dalgu-body { animation: none !important; }
+  .zap #dalgu-body, .done #dalgu-body, .zap .spike { animation: none !important; }
 }
 
 /* ----- content ----- */
@@ -151,6 +161,7 @@ body.event-body { background: var(--cream); -webkit-print-color-adjust: exact; p
 .top h1 { font-size: 30pt; line-height: 1.12; margin: 0 0 3mm; color: var(--blue-dark); }
 .top h1 em { font-style: normal; color: var(--ink); }
 .top .desc { font-size: 9.8pt; color: #2e3a4d; margin: 0 0 3.5mm; line-height: 1.55; }
+.top .tags { font-size: 10pt; font-weight: 700; color: var(--blue); margin: 0 0 3.5mm; }
 .top .chips { display: flex; flex-wrap: wrap; gap: 2mm; }
 .chip { font-size: 8.5pt; padding: 1mm 3.5mm; border-width: 1.5pt; }
 .scene-card { background: #fff; border: 1.5pt solid var(--line); border-radius: 5mm; padding: 3mm 3mm 2mm; }
@@ -185,7 +196,8 @@ h2 { font-size: 13pt; margin: 0 0 2mm; }
   <div class="top">
     <div>
       <h1>부채널 분석<br><em>원데이 클래스</em></h1>
-      <p class="desc">디바이스에서 새어 나오는 <strong>전력 소모</strong>로부터 비밀 정보를 알아내는 하드웨어 해킹 기법, '부채널 분석'을 하루 만에 직접 체험해 보세요! 암호 알고리즘을 배우고, 실제 장비로 <strong>AES 비밀키를 복구하는 실험</strong>까지 해봅니다.</p>
+      <p class="desc">디바이스에서 새어 나오는 <strong>전력 소모</strong>로부터 비밀 정보를 알아내는 '부채널 분석'을 하루 만에 직접 체험해 보세요!</p>
+      <p class="tags">#하드웨어해킹 #암호 #부채널분석 #AES비밀키복구</p>
       <div class="chips">
         <span class="chip chip--dark">10월 23일(금) 13:00 – 18:30</span>
         <span class="chip">E3 223호</span>
@@ -206,7 +218,8 @@ h2 { font-size: 13pt; margin: 0 0 2mm; }
         <!-- ===== Dalgu (official illustration), sitting behind the desk ===== -->
         <g id="dalgu" transform="translate(40 100)"><g id="dalgu-body">
           <g id="fur" opacity="0" stroke="#1b1b1b" stroke-width="4" stroke-linecap="round" fill="#5b8ad1">
-            <path d="M 128 2 L 118 -26 L 140 -2 Z"/><path d="M 155 -2 L 155 -32 L 169 -4 Z"/><path d="M 184 2 L 194 -26 L 172 -2 Z"/>
+            <path class="spike s1" d="M 128 2 L 118 -26 L 140 -2 Z"/><path class="spike s2" d="M 155 -2 L 155 -32 L 169 -4 Z"/><path class="spike s3" d="M 184 2 L 194 -26 L 172 -2 Z"/>
+            <path class="spike s4" d="M 108 10 L 92 -8 L 118 6 Z"/><path class="spike s5" d="M 204 10 L 220 -8 L 194 6 Z"/>
           </g>
           <image href="../images/sca-class/dalgu.png" x="20" y="-10" width="270" height="346"/>
           <g id="blush" opacity="0"><ellipse cx="70" cy="140" rx="12" ry="6" fill="#f3a0a0"/><ellipse cx="240" cy="140" rx="12" ry="6" fill="#f3a0a0"/></g>
