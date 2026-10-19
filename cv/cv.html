@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Jaeho Jeon — CV</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+<style>
+@page { size: A4; margin: 0; }
+* { box-sizing: border-box; }
+html, body { margin: 0; width: 210mm; height: 297mm; }
+body { font-family: Inter, "Noto Sans KR", -apple-system, sans-serif; color: #1b2a41; font-size: 9.1pt; line-height: 1.42; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.page { width: 210mm; height: 297mm; padding: 12mm 13mm 10mm; display: flex; flex-direction: column; overflow: hidden; }
+a { color: inherit; text-decoration: none; }
+.hdr { display: grid; grid-template-columns: 1fr 26mm; gap: 6mm; align-items: center; border-bottom: 1.6pt solid #1f4f9c; padding-bottom: 3.5mm; }
+.name { font-size: 22pt; font-weight: 800; letter-spacing: -0.02em; color: #1f4f9c; line-height: 1.1; }
+.name small { font-family: "Noto Sans KR", sans-serif; font-size: 10.5pt; font-weight: 700; color: #6b7686; margin-left: 2.5mm; letter-spacing: 0; }
+.role { font-size: 10pt; font-weight: 600; margin-top: 1.2mm; }
+.contact { margin-top: 1.6mm; font-size: 8.2pt; color: #3b4a60; display: flex; flex-wrap: wrap; gap: 1mm 4mm; }
+.contact span b { color: #1f4f9c; font-weight: 600; }
+.photo { width: 26mm; height: 26mm; border-radius: 50%; object-fit: cover; border: 1pt solid #d9e1ec; }
+h2 { font-size: 9.6pt; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; color: #1f4f9c; margin: 3.6mm 0 1.4mm; padding-bottom: .6mm; border-bottom: .7pt solid #d9e1ec; }
+.item { display: grid; grid-template-columns: 31mm 1fr; gap: 3mm; margin-bottom: 1.3mm; }
+.item .when { color: #6b7686; font-size: 8.2pt; font-variant-numeric: tabular-nums; padding-top: .2mm; white-space: nowrap; }
+.item .what b { font-weight: 700; }
+.item .what .sub { color: #3b4a60; }
+.item .what .note { color: #6b7686; font-size: 8.2pt; }
+.pub { margin-bottom: 1.5mm; padding-left: 4.5mm; text-indent: -4.5mm; }
+.pub .t { font-weight: 700; }
+.pub .v { font-style: italic; color: #3b4a60; }
+.pub .me { font-weight: 700; text-decoration: underline; text-decoration-color: #9cb8e8; text-underline-offset: 1.5pt; }
+.tags span { display: inline-block; background: #eef3fb; color: #1f4f9c; border-radius: 999px; padding: .4mm 2.6mm; margin: 0 1.2mm 1.2mm 0; font-weight: 600; font-size: 8.2pt; }
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 0 7mm; }
+.two .item { grid-template-columns: 28mm 1fr; }
+.foot { margin-top: auto; padding-top: 2mm; border-top: .7pt solid #d9e1ec; font-size: 7.6pt; color: #8a94a3; display: flex; justify-content: space-between; }
+</style></head>
+<body><div class="page">
+
+<div class="hdr">
+  <div>
+    <div class="name">Jaeho Jeon <small>전재호 · 田宰昊</small></div>
+    <div class="role">Ph.D. Student, Department of Electrical Engineering and Computer Science, DGIST</div>
+    <div class="role" style="font-weight:500;color:#3b4a60">Privacy and Applied Cryptography Lab (PACL) · Advisor: Prof. Young-Sik Kim</div>
+    <div class="contact">
+      <span><b>Email</b> dgwogh@dgist.ac.kr</span>
+      <span><b>Web</b> my-rooftop.github.io</span>
+      <span><b>GitHub</b> my-rooftop</span>
+      <span><b>Scholar</b> h2pBQrcAAAAJ</span>
+      <span><b>ORCID</b> 0009-0007-9074-8491</span>
+      <span><b>LinkedIn</b> jaeho-jeon-3a063425b</span>
+      <span><b>Location</b> Daegu, South Korea</span>
+    </div>
+  </div>
+  <img class="photo" src="../images/profile.jpg" alt="Jaeho Jeon">
+</div>
+
+<h2>Research Interests</h2>
+<div class="tags"><span>Side-channel analysis</span><span>Hardware security</span><span>Post-quantum cryptography implementation</span><span>Cryptographic engineering</span><span>Computer architecture</span><span>Coding theory</span></div>
+<div style="margin-top:.4mm">My research focuses on <b>side-channel analysis</b>. My goal is to become a uniquely recognized expert in side-channel analysis, and to gradually expand into computer architecture, quantum computing, networking, and coding theory.</div>
+
+<h2>Education</h2>
+<div class="item"><div class="when">2026.02 – present</div><div class="what"><b>Ph.D. student</b>, Electrical Engineering and Computer Science, <span class="sub">DGIST</span></div></div>
+<div class="item"><div class="when">2024.02 – 2026.02</div><div class="what"><b>M.S.</b>, Electrical Engineering and Computer Science, <span class="sub">DGIST</span></div></div>
+<div class="item"><div class="when">2017.02 – 2024.02</div><div class="what"><b>B.S.</b>, School of Undergraduate Studies, <span class="sub">DGIST</span></div></div>
+<div class="item"><div class="when">2014.03 – 2017.02</div><div class="what">Cheonan Upsung High School, <span class="sub">Cheonan</span></div></div>
+
+<h2>Publications</h2>
+<div class="pub"><span class="t">RB-LDC: Redundancy-Balanced Latent Coding for Robust Diffusion.</span> Hyunseok Jeong, <span class="me">Jaeho Jeon</span>, Young-Sik Kim. <span class="v">The Fortieth Annual Conference on Neural Information Processing Systems (NeurIPS 2026)</span>, accepted.</div>
+<div class="pub"><span class="t">Codeword Masking Can Be Harmful Under Replay Attacks on HQC.</span> <span class="me">Jaeho Jeon</span>, Yongseong Park, Jaeyeon Lee, Suseong Lee, Donghyen Kim, Young-Sik Kim. <span class="v">International Conference on the Theory and Application of Cryptology and Information Security (ASIACRYPT 2026)</span>, accepted. Cryptology ePrint Archive 2026/071.</div>
+
+<h2>Honors &amp; Awards</h2>
+<div class="item"><div class="when">2026.09</div><div class="what"><b>Grand Prize, 4th KICS HFR Paper Award</b> (제4회 KICS HFR 논문대상), Korean Institute of Communications and Information Sciences. Yongseong Park, Hyunseok Jeong, Jaeho Jeon. <span class="note">Total prize $10,000.</span></div></div>
+<div class="item"><div class="when">2026.06</div><div class="what"><b>GRAVITY 2026 Startup Competition</b>, passed the DGIST preliminary round with a hardware-hacking (side-channel) certification service for cryptographic products. <span class="note">Prize $10,000.</span></div></div>
+
+<h2>Teaching &amp; Mentoring</h2>
+<div class="item"><div class="when">2026.06 – 2026.09</div><div class="what"><b>Teaching Assistant</b>, Pre-URP, DGIST. Mentored a student team on <i>“Reading the Current to Break Ciphers: Side-Channel Analysis on RSA/AES”</i>.</div></div>
+<div class="item"><div class="when">2025.03 – 2025.12</div><div class="what"><b>Teaching Assistant</b>, UGRP (Undergraduate Group Research Program), DGIST. Supported the team that built an optimized PQC implementation on ARM Cortex-M4. <span class="note">The team won two Grand Prizes: PQC Migration Challenge (NIA, 2025.11) and Undergraduate Best Paper Award, 2025 KICS Fall Conference.</span></div></div>
+
+<h2>Academic &amp; Student Services</h2>
+<div class="two">
+  <div>
+    <div class="item"><div class="when">2026.07</div><div class="what"><b>Staff</b>, DGIST AI &amp; Crypto Summer Camp 2026 <span class="note">— organized the camp, hosted the rump session</span></div></div>
+    <div class="item"><div class="when">2026.04 – 2026.09</div><div class="what"><b>President</b>, DGIST Graduate Student Council <span class="note">— representing graduate students of all departments</span></div></div>
+  </div>
+  <div>
+    <div class="item"><div class="when">2026.03 – present</div><div class="what"><b>Graduate Student Representative</b>, Dept. of EECS, DGIST</div></div>
+    <div class="item"><div class="when">2024.10</div><div class="what"><b>Treasurer</b>, 2024 EECS &amp; AI DGIST Student Conference &amp; Happy Hour</div></div>
+  </div>
+</div>
+
+<div class="foot"><span>Jaeho Jeon · Curriculum Vitae</span><span>Last updated: October 2026 · my-rooftop.github.io</span></div>
+</div></body></html>
