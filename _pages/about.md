@@ -26,6 +26,7 @@ My goal is to become a uniquely recognized expert in side-channel analysis, so t
 
 # 🔥 News
 <div class='news-box' markdown='1'>
+- *2026.10*: &nbsp;🏆 Two of our papers won awards at the **2026 National Cryptography Contest** (국가암호공모전, Category B): the SDitH side-channel paper (Encouragement Award, 장려상) and the HQC codeword-masking paper.
 - *2026.09*: &nbsp;🏆 Grand Prize, **4th KICS HFR Paper Award** (제4회 KICS HFR 논문대상 대상수상) — Yongseong Park, Hyunseok Jeong, **Jaeho Jeon**.
 - *2026.09*: &nbsp;🎉🎉 Our paper "RB-LDC: Redundancy-Balanced Latent Coding for Robust Diffusion" is accepted to **NeurIPS 2026**.
 - *2026.08*: &nbsp;🎉🎉 Our paper "Codeword Masking Can Be Harmful Under Replay Attacks on HQC" is accepted to **ASIACRYPT 2026**.
@@ -45,6 +46,9 @@ My goal is to become a uniquely recognized expert in side-channel analysis, so t
   [[ePrint 2026/071]](https://eprint.iacr.org/2026/071)
 
 # 🎖 Honors and Awards
+- *2026.10*, **2026 National Cryptography Contest (국가암호공모전)**, Category B: Cryptographic Technology Application and Utilization (암호 기술 응용 및 활용 분야). Two papers awarded:
+  - **Encouragement Award (장려상)**: "Syndrome Decoding out of the Head: Structure-Aided Side-Channel Witness Recovery on SDitH" — Jaeyeon Lee, **Jaeho Jeon**, Young-Sik Kim.
+  - **Award**: "Codeword Masking Can Be Harmful Under Replay Attacks on HQC" — **Jaeho Jeon**, Yongseong Park, Jaeyeon Lee, Suseong Lee, Donghyen Kim, Young-Sik Kim.
 - *2026.09*, **Grand Prize, 4th KICS HFR Paper Award (제4회 KICS HFR 논문대상 대상)**, Yongseong Park, Hyunseok Jeong, **Jaeho Jeon**. Total prize: $10,000.
 - *2026.06*, **GRAVITY 2026 Startup Competition**, passed the DGIST preliminary round with a hardware-hacking (side-channel) certification service for cryptographic products. Prize: $10,000. \| [\[slides\]](files/GRAVITY2026.pdf) \| [\[photo\]](images/gravity2026.jpg)
 
