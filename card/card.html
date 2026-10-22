@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Business card — Jaeho Jeon</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+<style>
+@page { size: 92mm 52mm; margin: 0; }
+* { box-sizing: border-box; }
+html, body { margin: 0; background: #888; }
+body { font-family: Inter, "Noto Sans KR", -apple-system, sans-serif; color: #1b2a41; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+/* each sheet = card + 1mm bleed all round (92 x 52). Trim box is the inner 90 x 50. */
+.sheet { width: 92mm; height: 52mm; background: #fbf7ef; position: relative; overflow: hidden; page-break-after: always; }
+.sheet:last-child { page-break-after: auto; }
+.card { position: absolute; left: 1mm; top: 1mm; width: 90mm; height: 50mm; padding: 5mm 5.5mm 4.5mm; }
+.kr { font-family: "Noto Sans KR", sans-serif; }
+/* ---- front ---- */
+.id { max-width: 66mm; }
+.name { font-size: 15.5pt; font-weight: 800; color: #1f4f9c; letter-spacing: -0.02em; line-height: 1; }
+.name .kr { font-size: 8.2pt; font-weight: 700; color: #6b7686; margin-left: 2mm; letter-spacing: 0; }
+.role { font-size: 6.4pt; font-weight: 600; margin-top: 1.6mm; line-height: 1.35; }
+.lab { font-size: 6.2pt; color: #3b4a60; line-height: 1.35; }
+.tags { font-size: 6pt; font-weight: 700; color: #3f74c9; margin-top: 1.4mm; }
+.addr { position: absolute; left: 5.5mm; right: 5.5mm; bottom: 4.5mm; font-size: 5.3pt; color: #3b4a60; line-height: 1.45; border-top: .35pt solid #d9d2c3; padding-top: 1.4mm; }
+.addr b { color: #1b2a41; font-weight: 700; }
+.addr .contact { margin-top: .6mm; color: #1b2a41; font-weight: 600; }
+.logo { position: absolute; right: 5.5mm; top: 4.6mm; width: 11mm; }
+/* ---- back ---- */
+.back .card { padding: 4.6mm 5.5mm 4mm; }
+.head { font-size: 8.4pt; font-weight: 800; line-height: 1.22; color: #1b2a41; letter-spacing: -0.01em; }
+.head em { font-style: normal; color: #c0392b; }
+table { border-collapse: collapse; margin-top: 2.4mm; width: 64mm; }
+th, td { font-size: 6.3pt; padding: 1.15mm 1mm; text-align: center; border-bottom: .35pt solid #d9d2c3; }
+th { font-weight: 700; color: #6b7686; font-size: 5.6pt; letter-spacing: .04em; text-transform: uppercase; }
+td.rowh { text-align: left; font-weight: 700; color: #1b2a41; }
+td.rowh small { display: block; font-weight: 500; color: #6b7686; font-size: 5.2pt; }
+.broken { color: #c0392b; font-weight: 800; } .secure { color: #1f8a4c; font-weight: 800; }
+.ic { display: inline-block; width: 2.4mm; height: 2.4mm; vertical-align: -0.45mm; margin-right: .7mm; }
+.paper { position: absolute; left: 5.5mm; bottom: 4mm; width: 62mm; font-size: 5.6pt; line-height: 1.4; color: #3b4a60; }
+.paper b { color: #1b2a41; display: block; font-size: 6pt; }
+.paper .venue { color: #1f4f9c; font-weight: 700; }
+.qr { position: absolute; right: 5.5mm; bottom: 4mm; width: 12.5mm; text-align: center; }
+.qr img { width: 12.5mm; height: 12.5mm; display: block; }
+.qr div { font-size: 4.6pt; color: #6b7686; margin-top: .6mm; letter-spacing: -0.01em; }
+</style></head>
+<body>
+<!-- FRONT -->
+<div class="sheet front"><div class="card">
+  <img class="logo" src="../images/sca-class/pacl_logo.png" alt="PACL">
+  <div class="id">
+  <div class="name">Jaeho Jeon<span class="kr">전재호 · 田宰昊</span></div>
+  <div class="role">Ph.D. Student, Dept. of Electrical Engineering and Computer Science</div>
+  <div class="lab">Privacy and Applied Cryptography Lab (PACL)</div>
+  <div class="tags">#HardwareHacking #SideChannelAnalysis #PostQuantumCryptography</div>
+  </div>
+  <div class="addr">
+    <b>DGIST</b> (Daegu Gyeongbuk Institute of Science and Technology)<br>
+    333 Techno Jungang-daero, Hyeonpung-eup, Dalseong-gun, Daegu 42988, Korea
+    <div class="contact">Mobile +82-10-3081-9820 &nbsp;·&nbsp; dgwogh@dgist.ac.kr &nbsp;·&nbsp; my-rooftop.github.io</div>
+  </div>
+</div></div>
+
+<!-- BACK -->
+<div class="sheet back"><div class="card">
+  <div class="head">The first experimental evidence that<br>masking can be <em>harmful</em> on HQC</div>
+  <table>
+    <tr><th style="text-align:left"></th><th>Unmasked</th><th>Masked</th></tr>
+    <tr><td class="rowh">Prior work <small>DPA</small></td>
+        <td><span class="broken"><svg class="ic" viewBox="0 0 24 24"><path fill="#c0392b" d="M17 8h-1V6a4 4 0 0 0-7.7-1.5l1.9.8A2 2 0 0 1 14 6v2H7a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2zm-5 8.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg>Broken</span></td>
+        <td><span class="secure"><svg class="ic" viewBox="0 0 24 24"><path fill="#1f8a4c" d="M17 8h-1V6a4 4 0 0 0-8 0v2H7a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2zM10 6a2 2 0 0 1 4 0v2h-4V6zm2 10.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg>Secure</span></td></tr>
+    <tr><td class="rowh">This work <small>Replay attack</small></td>
+        <td><span class="secure"><svg class="ic" viewBox="0 0 24 24"><path fill="#1f8a4c" d="M17 8h-1V6a4 4 0 0 0-8 0v2H7a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2zM10 6a2 2 0 0 1 4 0v2h-4V6zm2 10.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg>Secure</span></td>
+        <td><span class="broken"><svg class="ic" viewBox="0 0 24 24"><path fill="#c0392b" d="M17 8h-1V6a4 4 0 0 0-7.7-1.5l1.9.8A2 2 0 0 1 14 6v2H7a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2zm-5 8.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg>Broken</span></td></tr>
+  </table>
+  <div class="paper"><b>Codeword Masking Can Be Harmful Under Replay Attacks on HQC</b><span class="venue">ASIACRYPT 2026</span> · Jaeho Jeon et al. · eprint.iacr.org/2026/071</div>
+  <div class="qr"><img src="qr_eprint.png" alt="QR"><div>Read the paper</div></div>
+</div></div>
+</body></html>

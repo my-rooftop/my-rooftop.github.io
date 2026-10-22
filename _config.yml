@@ -68,6 +68,7 @@ exclude:
   - docs
   - poster
   - cv
+  - card
   - google_scholar_crawler
   - "*.sublime-project"
   - "*.sublime-workspace"
