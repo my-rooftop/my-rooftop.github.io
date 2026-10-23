@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Side-Channel Analysis One-Day Class — Poster</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+/*SITE_CSS*/
+@page { size: A4; margin: 0; }
+html, body { width: 210mm; height: 297mm; margin: 0; }
+body.event-body { background: var(--cream); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.poster { width: 210mm; height: 297mm; padding: 9mm 11mm 7mm; display: flex; flex-direction: column; gap: 3.8mm; overflow: hidden; }
+.topbar { display: flex; justify-content: space-between; align-items: center; }
+.topbar .labrow { display: flex; align-items: center; gap: 4mm; }
+.topbar .logo { width: 24mm; background: #fff; border-radius: 3mm; border: 1.2pt solid var(--line); padding: 1.2mm; }
+.topbar .lab { font-weight: 900; color: var(--blue-dark); font-size: 12pt; }
+.topbar .lab span { display: block; font-weight: 400; font-size: 7.5pt; color: var(--muted); }
+.pill { background: var(--ink); color: #fff; font-weight: 700; font-size: 8.5pt; padding: 2mm 5mm; border-radius: 999px; letter-spacing: .04em; }
+.top { display: grid; grid-template-columns: 1fr 1.05fr; gap: 6mm; align-items: center; }
+.top h1 { font-size: 30pt; line-height: 1.12; margin: 0 0 3mm; color: var(--blue-dark); }
+.top h1 em { font-style: normal; color: var(--ink); }
+.top .desc { font-size: 8.8pt; margin-bottom: 2.5mm; }
+.poster { gap: 2.8mm; padding-top: 8mm; }
+.timeline li { padding: 1.15mm 4mm; }
+.info { padding: 1.8mm 3.5mm; }
+.apply { padding: 4mm 6mm; }
+.apply p { margin-bottom: 1mm; }
+.scene-card { padding: 2.5mm 2.5mm 1.5mm; }
+.scene-card .cap { margin-top: 1mm; }
+.top .desc { font-size: 9.8pt; color: #2e3a4d; margin: 0 0 3.5mm; line-height: 1.55; }
+.top .tags { font-size: 10pt; font-weight: 700; color: var(--blue); margin: 0 0 3.5mm; }
+.top .chips { display: flex; flex-wrap: wrap; gap: 2mm; }
+.chip { font-size: 8.5pt; padding: 1mm 3.5mm; border-width: 1.5pt; }
+.scene-card { background: #fff; border: 1.5pt solid var(--line); border-radius: 5mm; padding: 3mm 3mm 2mm; }
+.scene-card svg { width: 100%; height: auto; display: block; }
+.scene-card .cap { font-size: 8pt; color: var(--muted); margin: 1.5mm 1mm 0; text-align: center; }
+#banner { opacity: 1; } #sparks { opacity: 1; } #blush { opacity: 1; }
+/*PROBE_DOWN*/
+.info-grid { grid-template-columns: repeat(3, 1fr); gap: 3mm; }
+.info { padding: 2.2mm 3.5mm; border-radius: 3.5mm; border-width: 1.5pt; }
+.info__k { font-size: 7.8pt; margin-bottom: .5mm; } .info__v { font-size: 10pt; line-height: 1.35; } .info__s { font-size: 7.6pt; }
+.info__s--strong { font-size: 8.2pt; margin-top: 1mm; }
+h2 { font-size: 13pt; margin: 0 0 2mm; }
+.timeline { border-width: 1.5pt; border-radius: 3.5mm; }
+.timeline li { grid-template-columns: 32mm 1fr; padding: 1.6mm 4mm; font-size: 9.2pt; }
+.badge-main { font-size: 6.8pt; } .tl__sub { font-size: 8pt; }
+.apply { padding: 5mm 6mm; border-radius: 5mm; display: grid; grid-template-columns: 1fr 34mm; gap: 5mm; align-items: center; }
+.apply h2 { color: #fff; font-size: 13pt; margin-bottom: 1.5mm; }
+.apply p { margin: 0 0 1.5mm; font-size: 9.2pt; line-height: 1.5; }
+.apply .mail { font-size: 15pt; font-weight: 900; color: #ffd166; margin: 1.5mm 0; }
+.apply .note { color: #cfd8e6; font-size: 8.4pt; }
+.qr { text-align: center; }
+.qr img { width: 34mm; height: 34mm; background: #fff; border-radius: 2.5mm; display: block; margin: 0 auto; }
+.qr div { font-size: 7pt; color: #cfd8e6; margin-top: 1.2mm; line-height: 1.35; white-space: nowrap; }
+.foot { display: flex; align-items: center; justify-content: space-between; color: var(--muted); font-size: 7.8pt; margin-top: auto; }
+.foot img { height: 11mm; background: #fff; border-radius: 2mm; }
+
+/* ===== EN overrides (must stay last) ===== */
+.poster { gap: 2.4mm; padding-top: 8mm; }
+.top { grid-template-columns: 1fr 0.95fr; gap: 5mm; }
+.top h1 { font-size: 19pt; line-height: 1.1; margin-bottom: 1.5mm; }
+.top .desc { font-size: 8.8pt; margin-bottom: 2.5mm; }
+.top .chips { gap: 1.6mm; }
+.chip { font-size: 8pt; padding: .8mm 3mm; }
+.scene-card { padding: 2mm 2mm 1mm; }
+.scene-card .cap { font-size: 7.4pt; margin-top: .8mm; }
+.info-grid { gap: 2.4mm; }
+.info { padding: 1.8mm 3.5mm; }
+.info__v { font-size: 9.6pt; line-height: 1.3; }
+h2 { font-size: 12pt; margin-bottom: 1.5mm; }
+.timeline li { padding: 1.15mm 4mm; font-size: 8.6pt; }
+.apply { padding: 4mm 6mm; }
+.apply p { margin-bottom: 1mm; }
+.foot { padding-top: 1.5mm; }
+</style></head>
+<body class="event-body"><div class="poster">
+  <div class="topbar">
+    <div class="labrow"><img class="logo" src="../images/sca-class/pacl_logo.png" alt="PACL@DGIST"><div class="lab">DGIST PACL <span>Privacy and Applied Cryptography Lab.<br>Prof. Young-Sik Kim</span></div></div>
+    <div class="pill">ONE-DAY CLASS</div>
+  </div>
+  <div class="top">
+    <div>
+      <h1>Side-Channel Analysis<br><em>One-Day Class</em></h1>
+      <p class="desc">Try 'side-channel analysis' yourself in a single day: recovering secrets from the <strong>power consumption</strong> a device leaks.</p>
+      <p class="tags">#HardwareHacking #Cryptography #SideChannelAnalysis #AESKeyRecovery</p>
+      <div class="chips">
+        <span class="chip chip--dark">Oct 30 (Fri) 12:30 – 17:20</span>
+        <span class="chip">Room E3-223</span>
+        <span class="chip">First 5 applicants</span>
+        <span class="chip">🍱 Lunch provided</span>
+        <span class="chip">🍕 Unlimited snacks</span>
+      </div>
+    </div>
+    <div class="scene-card">
+<!--SCENE-->
+      <div class="cap">Dalgu collects power traces and recovers the AES key · you will do this yourself</div>
+    </div>
+  </div>
+
+  <div class="info-grid">
+    <div class="info"><div class="info__k">📅 When</div><div class="info__v">October 30 (Fri), 12:30 – 17:20</div></div>
+    <div class="info"><div class="info__k">📍 Where</div><div class="info__v">Room E3-223, DGIST</div></div>
+    <div class="info"><div class="info__k">👥 Participants</div><div class="info__v">First 5 applicants</div><div class="info__s">Apply by October 28 (Wed) · confirmed individually in order of application</div></div>
+    <div class="info"><div class="info__k">🎯 Who</div><div class="info__v">Undergraduates exploring their path, anyone interested in hardware hacking</div><div class="info__s info__s--strong">⚠️ Basic Python · C required</div></div>
+    <div class="info"><div class="info__k">💻 Bring</div><div class="info__v">Your own laptop</div></div>
+    <div class="info"><div class="info__k">🍕 Perks</div><div class="info__v">Lunch provided + unlimited snacks</div></div>
+  </div>
+
+  <div>
+    <h2>Schedule</h2>
+    <ol class="timeline">
+      <li><span class="tl__time">12:30 – 13:00</span><span class="tl__what">Lunch <span class="tl__sub">provided</span></span></li>
+      <li><span class="tl__time">13:00 – 13:20</span><span class="tl__what">Lab introduction</span></li>
+      <li><span class="tl__time">13:20 – 13:50</span><span class="tl__what">Introduction to side-channel analysis</span></li>
+      <li><span class="tl__time">14:00 – 14:50</span><span class="tl__what">Cryptographic algorithm basics</span></li>
+      <li><span class="tl__time">15:00 – 15:50</span><span class="tl__what">Setting up the lab equipment on your laptop</span></li>
+      <li class="tl--main"><span class="tl__time">16:00 – 17:20</span><span class="tl__what">AES key recovery experiment <span class="badge-main">Main lab</span></span></li>
+    </ol>
+  </div>
+
+  <div class="apply">
+    <div>
+      <h2>How to apply</h2>
+      <p>⏰ Applications are open until <strong>Wednesday, October 28</strong>.</p>
+      <p>Email your name, year, KakaoTalk ID or phone number, and <strong>one line on why you want to join</strong> to the address below.</p>
+      <div class="mail">dgwogh@dgist.ac.kr</div>
+      <p class="note">The first five applicants will be accepted and confirmed individually. Lunch and snacks are provided.</p>
+    </div>
+    <div class="qr"><img src="qr_sca-class.png" alt="QR"><div>Scan for the animation<br>and full details!<br><span style="font-size:6.4pt">my-rooftop.github.io/sca-class</span></div></div>
+  </div>
+
+  <div class="foot">
+    <div>DGIST PACL · Privacy and Applied Cryptography Lab. &nbsp;·&nbsp; Contact: dgwogh@dgist.ac.kr (Jaeho Jeon, Ph.D. student)</div>
+  </div>
+</div></body></html>

@@ -20,7 +20,7 @@
           count: function(n){ return '수집한 파형: ' + n + ' / ' + TOTAL; },
           cap0: '달구가 칩에 프로브를 갖다 댑니다…', cap1: '⚡ 칩이 암호화를 수행하는 동안 전력 소모를 측정합니다.', cap4: '📈 파형이 쌓일수록 통계 분석으로 키의 각 바이트가 드러납니다.', cap12: '🔓 거의 다 왔습니다… 마지막 바이트를 찾는 중!', capDone: '🎉 비밀키 복구 성공! 이걸 직접 해보는 게 이번 클래스입니다.' },
     en: { idle: 'Waiting for traces…', collecting: 'Collecting traces…', locked: function(n){ return n + ' / 16 bytes recovered'; }, done: '16 / 16 bytes recovered — key found',
-          count: function(n){ return 'Traces collected: ' + n + ' / ' + TOTAL; },
+          count: function(n){ return 'Traces: ' + n + ' / ' + TOTAL; },
           cap0: 'Dalgu places the probe on the chip…', cap1: '⚡ Measuring power consumption while the chip encrypts.', cap4: '📈 As traces pile up, statistics reveal the key one byte at a time.', cap12: '🔓 Almost there… hunting the last bytes!', capDone: '🎉 Key recovered! This is exactly what you will do in the class.' }
   };
   function L() { return I18N[document.documentElement.lang === 'en' ? 'en' : 'ko']; }
