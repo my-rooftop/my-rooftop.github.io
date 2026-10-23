@@ -66,7 +66,6 @@ My goal is to become a uniquely recognized expert in side-channel analysis, so t
 - *2026.02 - present*, Ph.D. student, Department of Electrical Engineering and Computer Science, [DGIST](https://www.dgist.ac.kr/), Daegu, South Korea.
 - *2024.02 - 2026.02*, M.S., Department of Electrical Engineering and Computer Science, [DGIST](https://www.dgist.ac.kr/), Daegu, South Korea.
 - *2017.02 - 2024.02*, B.S., School of Undergraduate Studies, [DGIST](https://www.dgist.ac.kr/), Daegu, South Korea.
-- *2014.03 - 2017.02*, Cheonan Upsung High School, Cheonan, South Korea.
 
 # 🐱 Cats
 
