@@ -15,6 +15,15 @@
   // --- the key we "recover" (the classic FIPS-197 example key) ---
   var KEY = ['2b','7e','15','16','28','ae','d2','a6','ab','f7','15','88','09','cf','4f','3c'];
   var TOTAL = 500;        // traces to collect
+  var I18N = {
+    ko: { idle: '파형 수집 대기 중…', collecting: '파형을 모으는 중…', locked: function(n){ return n + ' / 16 바이트 확정'; }, done: '16 / 16 바이트 확정 — 키 복구 완료',
+          count: function(n){ return '수집한 파형: ' + n + ' / ' + TOTAL; },
+          cap0: '달구가 칩에 프로브를 갖다 댑니다…', cap1: '⚡ 칩이 암호화를 수행하는 동안 전력 소모를 측정합니다.', cap4: '📈 파형이 쌓일수록 통계 분석으로 키의 각 바이트가 드러납니다.', cap12: '🔓 거의 다 왔습니다… 마지막 바이트를 찾는 중!', capDone: '🎉 비밀키 복구 성공! 이걸 직접 해보는 게 이번 클래스입니다.' },
+    en: { idle: 'Waiting for traces…', collecting: 'Collecting traces…', locked: function(n){ return n + ' / 16 bytes recovered'; }, done: '16 / 16 bytes recovered — key found',
+          count: function(n){ return 'Traces collected: ' + n + ' / ' + TOTAL; },
+          cap0: 'Dalgu places the probe on the chip…', cap1: '⚡ Measuring power consumption while the chip encrypts.', cap4: '📈 As traces pile up, statistics reveal the key one byte at a time.', cap12: '🔓 Almost there… hunting the last bytes!', capDone: '🎉 Key recovered! This is exactly what you will do in the class.' }
+  };
+  function L() { return I18N[document.documentElement.lang === 'en' ? 'en' : 'ko']; }
   var DURATION = 9000;    // ms for the collection phase
 
   // build the 16 key bytes as plain text
@@ -58,11 +67,11 @@
     clearAll();
     for (var i = 0; i < 16; i++) { texts[i].setAttribute('class', 'kt'); texts[i].textContent = '??';
     }
-    status.textContent = '파형 수집 대기 중…';
-    count.textContent = '수집한 파형: 0 / ' + TOTAL;
+    status.textContent = L().idle;
+    count.textContent = L().count(0);
     trace.setAttribute('points', '');
     samples = [];
-    caption.textContent = '달구가 칩에 프로브를 갖다 댑니다…';
+    caption.textContent = L().cap0;
   }
 
   function run() {
@@ -71,15 +80,15 @@
     later(function () { wrap.classList.add('probing'); }, 300);
     later(function () {
       wrap.classList.add('zap');
-      caption.textContent = '⚡ 칩이 암호화를 수행하는 동안 전력 소모를 측정합니다.';
+      caption.textContent = L().cap1;
       var start = performance.now(), tick = 0, locked = 0;
-      status.textContent = '파형을 모으는 중…';
+      status.textContent = L().collecting;
       function frame(now) {
         var p = Math.min(1, (now - start) / DURATION);
         tick++;
         drawTrace(tick);
         var n = Math.floor(p * TOTAL);
-        count.textContent = '수집한 파형: ' + n + ' / ' + TOTAL;
+        count.textContent = L().count(n);
         // flicker unlocked bytes, lock one byte per 1/16 of progress
         var shouldLock = Math.floor(p * 16);
         for (var i = locked; i < 16; i++) if (tick % 3 === 0) texts[i].textContent = hex();
@@ -87,9 +96,9 @@
           texts[locked].textContent = KEY[locked];
           texts[locked].setAttribute('class', 'kt kt--locked');
           locked++;
-          if (locked === 4) caption.textContent = '📈 파형이 쌓일수록 통계 분석으로 키의 각 바이트가 드러납니다.';
-          if (locked === 12) caption.textContent = '🔓 거의 다 왔습니다… 마지막 바이트를 찾는 중!';
-          status.textContent = locked + ' / 16 바이트 확정';
+          if (locked === 4) caption.textContent = L().cap4;
+          if (locked === 12) caption.textContent = L().cap12;
+          status.textContent = L().locked(locked);
         }
         if (p < 1) raf = requestAnimationFrame(frame); else finish(false);
       }
@@ -102,13 +111,23 @@
     for (var i = 0; i < 16; i++) {
       texts[i].textContent = KEY[i]; texts[i].setAttribute('class', 'kt kt--locked');
     }
-    status.textContent = '16 / 16 바이트 확정 — 키 복구 완료';
-    count.textContent = '수집한 파형: ' + TOTAL + ' / ' + TOTAL;
-    caption.textContent = '🎉 비밀키 복구 성공! 이걸 직접 해보는 게 이번 클래스입니다.';
+    status.textContent = L().done;
+    count.textContent = L().count(TOTAL);
+    caption.textContent = L().capDone;
     wrap.classList.add('done');
     if (!instant) later(run, 5000);
   }
 
   replay.addEventListener('click', run);
+  // language toggle: switch, remember, restart the scene so captions follow
+  Array.prototype.forEach.call(document.querySelectorAll('.lang-toggle button'), function (b) {
+    b.addEventListener('click', function () {
+      var lang = b.getAttribute('data-lang');
+      document.documentElement.lang = lang;
+      try { localStorage.setItem('sca-lang', lang); } catch (e) {}
+      document.title = lang === 'en' ? 'Side-Channel Analysis One-Day Class | DGIST PACL' : '부채널 분석 원데이 클래스 | DGIST PACL';
+      run();
+    });
+  });
   run();
 })();

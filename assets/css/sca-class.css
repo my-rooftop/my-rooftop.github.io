@@ -145,3 +145,9 @@ h2 { font-size: 1.6rem; }
   .timeline li { grid-template-columns: 1fr; gap: 2px; }
   .scene-bar { flex-direction: column; align-items: flex-start; }
 }
+
+/* ===== language toggle (KO / EN) ===== */
+html[lang="ko"] .en, html[lang="en"] .ko { display: none !important; }
+.lang-toggle { position: fixed; top: 14px; right: 14px; z-index: 50; display: flex; background: #fff; border: 1.5px solid var(--line); border-radius: 999px; padding: 3px; box-shadow: 0 4px 14px rgba(27,42,65,0.12); }
+.lang-toggle button { border: 0; background: transparent; font: inherit; font-weight: 700; font-size: 0.82rem; color: var(--muted); padding: 5px 12px; border-radius: 999px; cursor: pointer; }
+html[lang="ko"] .lang-toggle button[data-lang="ko"], html[lang="en"] .lang-toggle button[data-lang="en"] { background: var(--blue); color: #fff; }
