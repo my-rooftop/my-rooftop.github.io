@@ -21,6 +21,9 @@ main:
   - title: "Educations"
     url: "/#-educations"
 
+  - title: "Misc"
+    url: "/#-miscellaneous"
+
   - title: "Cats"
     url: "/#-cats"
 
