@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/sca-class.css">
   {% include analytics.html %}
 </head>
-<body class="event-body">
+<body class="event-body{% if page.theme %} theme-{{ page.theme }}{% endif %}">
 {{ content }}
 <script src="{{ site.baseurl }}/assets/js/sca-class.js"></script>
 </body>

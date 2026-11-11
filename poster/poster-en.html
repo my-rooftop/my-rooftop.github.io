@@ -157,6 +157,38 @@ html[lang="ko"] .en, html[lang="en"] .ko { display: none !important; }
 .lang-toggle button { border: 0; background: transparent; font: inherit; font-weight: 700; font-size: 0.82rem; color: var(--muted); padding: 5px 12px; border-radius: 999px; cursor: pointer; }
 html[lang="ko"] .lang-toggle button[data-lang="ko"], html[lang="en"] .lang-toggle button[data-lang="en"] { background: var(--blue); color: #fff; }
 
+/* ===== purple theme (2027-03-05 session) ===== */
+body.theme-purple { --cream: #f5f0fc; --blue: #7b4fd6; --blue-dark: #4a2a9e; --line: #ddd0f2; --ink: #251a45; }
+.theme-purple .tl--main { background: #f3edfc; }
+.theme-purple .t-count, .theme-purple .t-status { fill: #4a2a9e; }
+.theme-purple .t-label { fill: #251a45; }
+.theme-purple .btn:hover { box-shadow: 0 6px 16px rgba(74,42,158,0.22); }
+
+/* ===== session navigation (blog-like) ===== */
+.sessions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 4px 0 6px; }
+.sessions__label { font-weight: 700; font-size: 0.85rem; color: var(--muted); margin-right: 4px; }
+.sessions__item { text-decoration: none; font-weight: 700; font-size: 0.85rem; padding: 5px 14px; border-radius: 999px; border: 1.5px solid var(--line); background: #fff; color: var(--blue-dark); }
+.sessions__item.is-active { background: var(--blue); border-color: var(--blue); color: #fff; }
+.prev-link { margin: 0 0 4px; font-size: 0.92rem; color: var(--muted); }
+.ended { background: var(--ink); color: #fff; text-align: center; padding: 10px 110px 10px 16px; font-size: 0.92rem; }
+.ended a { color: #ffd166; font-weight: 700; margin-left: 8px; white-space: nowrap; }
+
+/* ===== recap (past session) ===== */
+.recap { background: #fff; border: 2px solid var(--line); border-radius: 20px; padding: 22px; }
+.recap__date { font-size: 0.9rem; font-weight: 700; color: var(--muted); margin-left: 6px; }
+.recap__grid { display: grid; grid-template-columns: 0.72fr 1.28fr; gap: 26px; align-items: start; }
+.recap__poster img { width: 100%; display: block; border-radius: 12px; border: 1.5px solid var(--line); }
+.recap__cap { text-align: center; font-size: 0.8rem; color: var(--muted); margin-top: 6px; }
+.recap__body p { margin: 0 0 12px; }
+.recap__photos { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 16px 0; }
+.recap__photos figure { margin: 0; }
+.recap__photos img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; border-radius: 12px; }
+.recap__photos figcaption { font-size: 0.8rem; color: var(--muted); margin-top: 5px; }
+.recap__next { margin-top: 6px; }
+.archive-divider { margin: 34px 0 -10px; color: var(--muted); font-size: 1.05rem; }
+@media (max-width: 860px) { .recap__grid { grid-template-columns: 1fr; } .recap__poster { max-width: 360px; margin: 0 auto; } }
+@media (max-width: 520px) { .recap__photos { grid-template-columns: 1fr; } }
+
 @page { size: A4; margin: 0; }
 html, body { width: 210mm; height: 297mm; margin: 0; }
 body.event-body { background: var(--cream); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
@@ -224,7 +256,7 @@ h2 { font-size: 12pt; margin-bottom: 1.5mm; }
 .apply p { margin-bottom: 1mm; }
 .foot { padding-top: 1.5mm; }
 </style></head>
-<body class="event-body"><div class="poster">
+<body class="event-body theme-purple"><div class="poster">
   <div class="topbar">
     <div class="labrow"><img class="logo" src="../images/sca-class/pacl_logo.png" alt="PACL@DGIST"><div class="lab">DGIST PACL <span>Privacy and Applied Cryptography Lab.<br>Prof. Young-Sik Kim</span></div></div>
     <div class="pill">ONE-DAY CLASS</div>
@@ -235,7 +267,7 @@ h2 { font-size: 12pt; margin-bottom: 1.5mm; }
       <p class="desc">Try 'side-channel analysis' yourself in a single day: recovering secrets from the <strong>power consumption</strong> a device leaks.</p>
       <p class="tags">#HardwareHacking #Cryptography #SideChannelAnalysis #AESKeyRecovery</p>
       <div class="chips">
-        <span class="chip chip--dark">Oct 30 (Fri) 12:30 – 17:20</span>
+        <span class="chip chip--dark">Mar 5, 2027 (Fri) 12:30 – 17:20</span>
         <span class="chip">Room E3-223</span>
         <span class="chip">First 5 applicants</span>
         <span class="chip">🍱 Lunch provided</span>
@@ -390,9 +422,9 @@ h2 { font-size: 12pt; margin-bottom: 1.5mm; }
   </div>
 
   <div class="info-grid">
-    <div class="info"><div class="info__k">📅 When</div><div class="info__v">October 30 (Fri), 12:30 – 17:20</div></div>
+    <div class="info"><div class="info__k">📅 When</div><div class="info__v">March 5, 2027 (Fri), 12:30 – 17:20</div></div>
     <div class="info"><div class="info__k">📍 Where</div><div class="info__v">Room E3-223, DGIST</div></div>
-    <div class="info"><div class="info__k">👥 Participants</div><div class="info__v">First 5 applicants</div><div class="info__s">Apply by October 28 (Wed) · confirmed individually in order of application</div></div>
+    <div class="info"><div class="info__k">👥 Participants</div><div class="info__v">First 5 applicants</div><div class="info__s">Apply by March 3 (Wed) · confirmed individually in order of application</div></div>
     <div class="info"><div class="info__k">🎯 Who</div><div class="info__v">Undergraduates exploring their path, anyone interested in hardware hacking</div><div class="info__s info__s--strong">⚠️ Basic Python · C required</div></div>
     <div class="info"><div class="info__k">💻 Bring</div><div class="info__v">Your own laptop</div></div>
     <div class="info"><div class="info__k">🍕 Perks</div><div class="info__v">Lunch provided + unlimited snacks</div></div>
@@ -413,7 +445,7 @@ h2 { font-size: 12pt; margin-bottom: 1.5mm; }
   <div class="apply">
     <div>
       <h2>How to apply</h2>
-      <p>⏰ Applications are open until <strong>Wednesday, October 28</strong>.</p>
+      <p>⏰ Applications are open until <strong>Wednesday, March 3</strong>.</p>
       <p>Email your name, year, KakaoTalk ID or phone number, and <strong>one line on why you want to join</strong> to the address below.</p>
       <div class="mail">dgwogh@dgist.ac.kr</div>
       <p class="note">The first five applicants will be accepted and confirmed individually. Lunch and snacks are provided.</p>
