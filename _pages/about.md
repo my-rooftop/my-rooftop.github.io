@@ -68,14 +68,8 @@ My goal is to become a uniquely recognized expert in side-channel analysis, so t
 - *2017.02 - 2024.02*, B.S., School of Undergraduate Studies, [DGIST](https://www.dgist.ac.kr/), Daegu, South Korea.
 
 # 🧩 Miscellaneous
-
-**Posters**
-
-- **Secure Sparse Polynomial Multiplier for HQC: Parallelism and Leakage Analysis**, **Jaeho Jeon**, Young-Sik Kim. *Poster session, Conference on Cryptographic Hardware and Embedded Systems (**CHES 2025**)*, Kuala Lumpur, Malaysia, September 14–18, 2025. [[photo 1]](images/ches2025_1.jpg) [[photo 2]](images/ches2025_2.jpg)
-
-**Open source**
-
-- [ChipWhisperer](https://github.com/newaetech/chipwhisperer) (NewAE Technology): replaced the deprecated `pkg_resources` with `importlib.resources` in TraceWhisperer, merged in August 2025. [[PR #549]](https://github.com/newaetech/chipwhisperer/pull/549)
+- *2025.09*, **Poster**, "Secure Sparse Polynomial Multiplier for HQC: Parallelism and Leakage Analysis", **Jaeho Jeon**, Young-Sik Kim. Conference on Cryptographic Hardware and Embedded Systems (**CHES 2025**), Kuala Lumpur, Malaysia. \| [\[photo 1\]](images/ches2025_1.jpg) [\[photo 2\]](images/ches2025_2.jpg)
+- *2025.08*, **Open-source contribution**, [ChipWhisperer](https://github.com/newaetech/chipwhisperer) (NewAE Technology): replaced the deprecated `pkg_resources` with `importlib.resources` in TraceWhisperer. \| [\[PR #549\]](https://github.com/newaetech/chipwhisperer/pull/549)
 
 # 🐱 Cats
 
