@@ -1,0 +1,45 @@
+<!-- One-day class promo: shows once per browser, closes itself after 5 s.
+     To promote a new session, change data-id, data-until and the text. -->
+<div id="class-popup" data-id="sca-class-2027-03-05" data-until="2027-03-03" hidden>
+  <button type="button" class="cp__close" aria-label="Close">&times;</button>
+  <a class="cp__body" href="{{ site.baseurl }}/sca-class/">
+    <img src="{{ site.baseurl }}/images/sca-class/pacl_logo.png" alt="">
+    <span>
+      <strong>2nd Side-Channel Analysis One-Day Class</strong>
+      <span class="cp__sub">March 5, 2027 · DGIST E3-223 · first 5 applicants</span>
+      <span class="cp__cta">See details and apply →</span>
+    </span>
+  </a>
+  <div class="cp__bar"><i></i></div>
+</div>
+<style>
+#class-popup { position: fixed; right: 18px; bottom: 18px; z-index: 1000; width: 340px; max-width: calc(100vw - 36px); background: #fff; border: 1.5px solid #ddd0f2; border-radius: 14px; box-shadow: 0 10px 30px rgba(37,26,69,.22); overflow: hidden; font-size: 14px; line-height: 1.4; opacity: 0; transform: translateY(12px); transition: opacity .3s, transform .3s; }
+#class-popup.is-on { opacity: 1; transform: none; }
+#class-popup .cp__body { display: flex; gap: 12px; align-items: center; padding: 14px 34px 14px 14px; text-decoration: none; color: #251a45; }
+#class-popup img { width: 56px; height: auto; flex: none; }
+#class-popup strong { display: block; color: #4a2a9e; }
+#class-popup .cp__sub { display: block; color: #6b7686; font-size: 12.5px; margin-top: 2px; }
+#class-popup .cp__cta { display: block; color: #7b4fd6; font-weight: 700; margin-top: 4px; }
+#class-popup .cp__close { position: absolute; top: 4px; right: 6px; border: 0; background: none; font-size: 22px; line-height: 1; color: #8a94a3; cursor: pointer; padding: 4px 6px; }
+#class-popup .cp__bar { height: 3px; background: #efe8fb; }
+#class-popup .cp__bar i { display: block; height: 100%; width: 100%; background: #7b4fd6; transform-origin: left; }
+#class-popup.is-on .cp__bar i { animation: cpbar 5s linear forwards; }
+#class-popup.is-on:hover .cp__bar i { animation-play-state: paused; }
+@keyframes cpbar { to { transform: scaleX(0); } }
+@media (prefers-reduced-motion: reduce) { #class-popup { transition: none; } }
+</style>
+<script>
+(function () {
+  var el = document.getElementById('class-popup'); if (!el) return;
+  var key = 'popup-seen-' + el.getAttribute('data-id');
+  var until = new Date(el.getAttribute('data-until') + 'T23:59:59+09:00');
+  try { if (localStorage.getItem(key) || new Date() > until) return; } catch (e) {}
+  function close() { el.classList.remove('is-on'); setTimeout(function () { el.hidden = true; }, 350); }
+  el.hidden = false;
+  requestAnimationFrame(function () { el.classList.add('is-on'); });
+  try { localStorage.setItem(key, '1'); } catch (e) {}
+  el.querySelector('.cp__close').addEventListener('click', close);
+  // the progress bar drives the timer, so hovering pauses both
+  el.querySelector('.cp__bar i').addEventListener('animationend', close);
+})();
+</script>
