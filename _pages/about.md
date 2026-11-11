@@ -50,7 +50,7 @@ My goal is to become a uniquely recognized expert in side-channel analysis, so t
 - **Secure Sparse Polynomial Multiplier for HQC: Parallelism and Leakage Analysis**  
   **Jaeho Jeon**, Young-Sik Kim  
   *Poster session, Conference on Cryptographic Hardware and Embedded Systems (**CHES 2025**)*, Kuala Lumpur, Malaysia, September 14–18, 2025  
-  [[accepted posters]](https://ches.iacr.org/2025/acceptedposters.php) [[photo 1]](images/ches2025_1.jpg) [[photo 2]](images/ches2025_2.jpg)
+  [[photo 1]](images/ches2025_1.jpg) [[photo 2]](images/ches2025_2.jpg)
 
 # 🎖 Honors and Awards
 - *2026.10*, **2026 National Cryptography Contest (국가암호공모전)**, Category B: Cryptographic Technology Application and Utilization (암호 기술 응용 및 활용 분야). Two papers awarded:
