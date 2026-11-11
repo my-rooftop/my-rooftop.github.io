@@ -1,6 +1,6 @@
-<!-- One-day class promo: shows once per browser, closes itself after 5 s.
-     To promote a new session, change data-id, data-until and the text. -->
-<div id="class-popup" data-id="sca-class-2027-03-05" data-until="2027-03-03" hidden>
+<!-- One-day class promo: shows on every visit until data-until, closes itself after 5 s.
+     To promote a new session, change data-until and the text. -->
+<div id="class-popup" data-until="2027-03-03" hidden>
   <button type="button" class="cp__close" aria-label="Close">&times;</button>
   <a class="cp__body" href="{{ site.baseurl }}/sca-class/">
     <img src="{{ site.baseurl }}/images/sca-class/pacl_logo.png" alt="">
@@ -31,13 +31,11 @@
 <script>
 (function () {
   var el = document.getElementById('class-popup'); if (!el) return;
-  var key = 'popup-seen-' + el.getAttribute('data-id');
   var until = new Date(el.getAttribute('data-until') + 'T23:59:59+09:00');
-  try { if (localStorage.getItem(key) || new Date() > until) return; } catch (e) {}
+  if (new Date() > until) return;
   function close() { el.classList.remove('is-on'); setTimeout(function () { el.hidden = true; }, 350); }
   el.hidden = false;
   requestAnimationFrame(function () { el.classList.add('is-on'); });
-  try { localStorage.setItem(key, '1'); } catch (e) {}
   el.querySelector('.cp__close').addEventListener('click', close);
   // the progress bar drives the timer, so hovering pauses both
   el.querySelector('.cp__bar i').addEventListener('animationend', close);
