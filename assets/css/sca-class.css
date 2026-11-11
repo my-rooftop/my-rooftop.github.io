@@ -183,3 +183,6 @@ body.theme-purple { --cream: #f5f0fc; --blue: #7b4fd6; --blue-dark: #4a2a9e; --l
 .archive-divider { margin: 34px 0 -10px; color: var(--muted); font-size: 1.05rem; }
 @media (max-width: 860px) { .recap__grid { grid-template-columns: 1fr; } .recap__poster { max-width: 360px; margin: 0 auto; } }
 @media (max-width: 520px) { .recap__photos { grid-template-columns: 1fr; } }
+
+/* session number badge above the title */
+.hero__round { display: inline-block; background: var(--blue); color: #fff; font-weight: 800; font-size: 0.85rem; padding: 3px 12px; border-radius: 999px; margin-bottom: 8px; letter-spacing: .02em; }

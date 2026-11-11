@@ -189,6 +189,9 @@ body.theme-purple { --cream: #f5f0fc; --blue: #7b4fd6; --blue-dark: #4a2a9e; --l
 @media (max-width: 860px) { .recap__grid { grid-template-columns: 1fr; } .recap__poster { max-width: 360px; margin: 0 auto; } }
 @media (max-width: 520px) { .recap__photos { grid-template-columns: 1fr; } }
 
+/* session number badge above the title */
+.hero__round { display: inline-block; background: var(--blue); color: #fff; font-weight: 800; font-size: 0.85rem; padding: 3px 12px; border-radius: 999px; margin-bottom: 8px; letter-spacing: .02em; }
+
 @page { size: A4; margin: 0; }
 html, body { width: 210mm; height: 297mm; margin: 0; }
 body.event-body { background: var(--cream); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
@@ -259,7 +262,7 @@ h2 { font-size: 12pt; margin-bottom: 1.5mm; }
 <body class="event-body theme-purple"><div class="poster">
   <div class="topbar">
     <div class="labrow"><img class="logo" src="../images/sca-class/pacl_logo.png" alt="PACL@DGIST"><div class="lab">DGIST PACL <span>Privacy and Applied Cryptography Lab.<br>Prof. Young-Sik Kim</span></div></div>
-    <div class="pill">ONE-DAY CLASS</div>
+    <div class="pill">2ND · ONE-DAY CLASS</div>
   </div>
   <div class="top">
     <div>

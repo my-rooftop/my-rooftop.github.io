@@ -125,7 +125,8 @@
       var lang = b.getAttribute('data-lang');
       document.documentElement.lang = lang;
       try { localStorage.setItem('sca-lang', lang); } catch (e) {}
-      document.title = lang === 'en' ? 'Side-Channel Analysis One-Day Class | DGIST PACL' : '부채널 분석 원데이 클래스 | DGIST PACL';
+      if (!window.__scaTitleKo) window.__scaTitleKo = document.title;
+      document.title = lang === 'en' ? 'Side-Channel Analysis One-Day Class | DGIST PACL' : window.__scaTitleKo;
       run();
     });
   });
