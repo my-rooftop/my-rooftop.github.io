@@ -23,7 +23,7 @@
           count: function(n){ return 'Traces: ' + n + ' / ' + TOTAL; },
           cap0: 'Dalgu places the probe on the chip…', cap1: '⚡ Measuring power consumption while the chip encrypts.', cap4: '📈 As traces pile up, statistics reveal the key one byte at a time.', cap12: '🔓 Almost there… hunting the last bytes!', capDone: '🎉 Key recovered! This is exactly what you will do in the class.' }
   };
-  function L() { return I18N[document.documentElement.lang === 'en' ? 'en' : 'ko']; }
+  function L() { return I18N[document.documentElement.lang === 'ko' ? 'ko' : 'en']; }
   var DURATION = 9000;    // ms for the collection phase
 
   // build the 16 key bytes as plain text
@@ -118,6 +118,8 @@
     if (!instant) later(run, 5000);
   }
 
+  function setTitle() { var h = document.documentElement; document.title = h.getAttribute(h.lang === 'en' ? 'data-title-en' : 'data-title-ko') || document.title; }
+  setTitle();
   replay.addEventListener('click', run);
   // language toggle: switch, remember, restart the scene so captions follow
   Array.prototype.forEach.call(document.querySelectorAll('.lang-toggle button'), function (b) {
@@ -125,8 +127,7 @@
       var lang = b.getAttribute('data-lang');
       document.documentElement.lang = lang;
       try { localStorage.setItem('sca-lang', lang); } catch (e) {}
-      if (!window.__scaTitleKo) window.__scaTitleKo = document.title;
-      document.title = lang === 'en' ? 'Side-Channel Analysis One-Day Class | DGIST PACL' : window.__scaTitleKo;
+      setTitle();
       run();
     });
   });
