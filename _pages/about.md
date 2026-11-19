@@ -24,6 +24,8 @@ My goal is to become a uniquely recognized expert in side-channel analysis, so t
 <a href='https://scholar.google.com/citations?user=h2pBQrcAAAAJ&hl=en'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>
 
 
+{% include slideshow.html %}
+
 # 🔥 News
 <div class='news-box' markdown='1'>
 - *2026.10*: &nbsp;🏆 Two of our papers won awards at the **2026 National Cryptography Contest** (국가암호공모전, Category B): the HQC codeword-masking paper (Excellence Award, 우수상) and the SDitH side-channel paper (Encouragement Award, 장려상).
@@ -46,10 +48,10 @@ My goal is to become a uniquely recognized expert in side-channel analysis, so t
   [[ePrint 2026/071]](https://eprint.iacr.org/2026/071)
 
 # 🎖 Honors and Awards
-- *2026.10*, **2026 National Cryptography Contest (국가암호공모전)**, Category B: Cryptographic Technology Application and Utilization (암호 기술 응용 및 활용 분야). Two papers awarded:
+- *2026.10*, **2026 National Cryptography Contest (국가암호공모전)**, Category B: Cryptographic Technology Application and Utilization (암호 기술 응용 및 활용 분야). Two papers awarded: [\[photo\]](images/award_ncc2026.jpg)
   - **Excellence Award (우수상)**: "Codeword Masking Can Be Harmful Under Replay Attacks on HQC" — **Jaeho Jeon**, Yongseong Park, Jaeyeon Lee, Suseong Lee, Donghyen Kim, Young-Sik Kim.
   - **Encouragement Award (장려상)**: "Syndrome Decoding out of the Head: Structure-Aided Side-Channel Witness Recovery on SDitH" — Jaeyeon Lee, **Jaeho Jeon**, Young-Sik Kim.
-- *2026.09*, **Grand Prize, 4th KICS HFR Paper Award (제4회 KICS HFR 논문대상 대상)**, Yongseong Park, Hyunseok Jeong, **Jaeho Jeon**. Total prize: $10,000.
+- *2026.09*, **Grand Prize, 4th KICS HFR Paper Award (제4회 KICS HFR 논문대상 대상)**, Yongseong Park, Hyunseok Jeong, **Jaeho Jeon**. Total prize: $10,000. \| [\[photo\]](images/award_hfr2026.jpg)
 - *2026.06*, **GRAVITY 2026 Startup Competition**, passed the DGIST preliminary round with a hardware-hacking (side-channel) certification service for cryptographic products. Prize: $10,000. \| [\[slides\]](files/GRAVITY2026.pdf) \| [\[photo\]](images/gravity2026.jpg)
 
 # 🏫 Teaching

@@ -1,0 +1,44 @@
+<!-- Photo slideshow: add a <figure class="ss__slide"> to show another photo. -->
+<div class="ss" id="slideshow" aria-roledescription="carousel">
+  <figure class="ss__slide is-on">
+    <img src="{{ site.baseurl }}/images/slide_ncc2026.jpg" alt="2026 National Cryptography Contest award ceremony">
+    <figcaption><strong>2026.10</strong> · National Cryptography Contest (국가암호공모전) award ceremony</figcaption>
+  </figure>
+  <figure class="ss__slide">
+    <img src="{{ site.baseurl }}/images/slide_hfr2026.jpg" alt="4th KICS HFR Paper Award">
+    <figcaption><strong>2026.09</strong> · Grand Prize, 4th KICS HFR Paper Award (제4회 KICS HFR 논문대상)</figcaption>
+  </figure>
+  <button type="button" class="ss__nav ss__prev" aria-label="Previous photo">&#8249;</button>
+  <button type="button" class="ss__nav ss__next" aria-label="Next photo">&#8250;</button>
+  <div class="ss__dots"></div>
+</div>
+<style>
+.ss { position: relative; max-width: 720px; margin: 1.2em 0 1.6em; aspect-ratio: 3 / 2; border-radius: 12px; overflow: hidden; background: #111; box-shadow: 0 6px 20px rgba(0,0,0,.15); }
+.ss__slide { position: absolute; inset: 0; margin: 0; opacity: 0; transition: opacity .8s ease; }
+.ss__slide.is-on { opacity: 1; }
+.ss__slide img { width: 100%; height: 100%; object-fit: cover; display: block; margin: 0; border-radius: 0; }
+.ss__slide figcaption { position: absolute; left: 0; right: 0; bottom: 0; margin: 0; padding: 28px 16px 26px; color: #fff; font-size: .85em; line-height: 1.35; background: linear-gradient(transparent, rgba(0,0,0,.72)); font-style: normal; text-align: left; font-family: inherit; }
+.ss__nav { position: absolute; top: 50%; transform: translateY(-50%); border: 0; background: rgba(0,0,0,.35); color: #fff; width: 36px; height: 36px; border-radius: 50%; font-size: 22px; line-height: 1; cursor: pointer; opacity: 0; transition: opacity .2s; padding: 0; }
+.ss:hover .ss__nav, .ss__nav:focus { opacity: 1; }
+.ss__prev { left: 10px; } .ss__next { right: 10px; }
+.ss__dots { position: absolute; left: 0; right: 0; bottom: 8px; display: flex; justify-content: center; gap: 6px; }
+.ss__dots button { width: 8px; height: 8px; border-radius: 50%; border: 0; padding: 0; background: rgba(255,255,255,.5); cursor: pointer; }
+.ss__dots button.is-on { background: #fff; }
+@media (prefers-reduced-motion: reduce) { .ss__slide { transition: none; } }
+</style>
+<script>
+(function () {
+  var root = document.getElementById('slideshow'); if (!root) return;
+  var slides = root.querySelectorAll('.ss__slide'), dots = root.querySelector('.ss__dots'), i = 0, timer = null, DELAY = 4000;
+  if (slides.length < 2) { root.querySelectorAll('.ss__nav').forEach(function (b) { b.hidden = true; }); return; }
+  slides.forEach(function (_, k) { var d = document.createElement('button'); d.type = 'button'; d.setAttribute('aria-label', 'Photo ' + (k + 1)); d.addEventListener('click', function () { go(k); restart(); }); dots.appendChild(d); });
+  function go(n) { slides[i].classList.remove('is-on'); dots.children[i].classList.remove('is-on'); i = (n + slides.length) % slides.length; slides[i].classList.add('is-on'); dots.children[i].classList.add('is-on'); }
+  function start() { stop(); timer = setInterval(function () { go(i + 1); }, DELAY); }
+  function stop() { if (timer) clearInterval(timer); timer = null; }
+  function restart() { start(); }
+  root.querySelector('.ss__prev').addEventListener('click', function () { go(i - 1); restart(); });
+  root.querySelector('.ss__next').addEventListener('click', function () { go(i + 1); restart(); });
+  root.addEventListener('mouseenter', stop); root.addEventListener('mouseleave', start);
+  dots.children[0].classList.add('is-on'); start();
+})();
+</script>
